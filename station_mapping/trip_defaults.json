@@ -1,0 +1,118 @@
+{
+  "1": {
+    "N": "VAN CORTLANDT PARK - 242 ST",
+    "S": "SOUTH FERRY"
+  },
+  "2": {
+    "N": "WAKEFIELD - 241 ST",
+    "S": "FLATBUSH AV - BROOKLYN COLLEGE"
+  },
+  "3": {
+    "N": "HARLEM - 148 ST",
+    "S": "NEW LOTS AV"
+  },
+  "4": {
+    "N": "WOODLAWN",
+    "S": "CROWN HTS - UTICA AV"
+  },
+  "5": {
+    "N": "EASTCHESTER - DYRE AV",
+    "S": "FLATBUSH AV - BROOKLYN COLLEGE"
+  },
+  "5X": {
+    "N": "EASTCHESTER - DYRE AV",
+    "S": "FLATBUSH AV - BROOKLYN COLLEGE"
+  },
+  "6": {
+    "N": "PELHAM BAY PARK",
+    "S": "BROOKLYN BRIDGE - CITY HALL"
+  },
+  "6X": {
+    "N": "PELHAM BAY PARK",
+    "S": "BROOKLYN BRIDGE - CITY HALL"
+  },
+  "7": {
+    "N": "FLUSHING - MAIN ST",
+    "S": "34 ST - 11 AV"
+  },
+  "7X": {
+    "N": "FLUSHING - MAIN ST",
+    "S": "34 ST - 11 AV"
+  },
+  "A": {
+    "N": "INWOOD - 207 ST",
+    "S": "FAR ROCKAWAY - MOTT AV"
+  },
+  "B": {
+    "N": "BEDFORD PARK BLVD - LEHMAN COLLEGE",
+    "S": "BRIGHTON BEACH"
+  },
+  "C": {
+    "N": "168 ST",
+    "S": "EUCLID AV"
+  },
+  "D": {
+    "N": "NORWOOD - 205 ST",
+    "S": "CONEY ISLAND - STILLWELL AV"
+  },
+  "E": {
+    "N": "JAMAICA CENTER - PARSONS / ARCHER",
+    "S": "WORLD TRADE CENTER"
+  },
+  "F": {
+    "N": "JAMAICA - 179 ST",
+    "S": "CONEY ISLAND - STILLWELL AV"
+  },
+  "G": {
+    "N": "COURT SQ",
+    "S": "CHURCH AV"
+  },
+  "GS": {
+    "N": "TIMES SQ - 42 ST",
+    "S": "GRAND CENTRAL - 42 ST"
+  },
+  "H": {
+    "N": "BROAD CHANNEL",
+    "S": "ROCKAWAY PARK - BEACH 116 ST"
+  },
+  "J": {
+    "N": "JAMAICA CENTER - PARSONS / ARCHER",
+    "S": "BROAD ST"
+  },
+  "L": {
+    "N": "8 AV",
+    "S": "CANARSIE - ROCKAWAY PKWY"
+  },
+  "M": {
+    "N": "FOREST HILLS - 71 AV",
+    "S": "BROADWAY JCT"
+  },
+  "N": {
+    "N": "ASTORIA - DITMARS BLVD",
+    "S": "CONEY ISLAND - STILLWELL AV"
+  },
+  "Q": {
+    "N": "96 ST",
+    "S": "CONEY ISLAND - STILLWELL AV"
+  },
+  "R": {
+    "N": "FOREST HILLS - 71 AV",
+    "S": "BAY RIDGE - 95 ST"
+  },
+  "FS": {
+    "N": "FRANKLIN AV",
+    "S": "PROSPECT PARK"
+  },
+  "SI": {
+    "N": "ST GEORGE",
+    "S": "TOTTENVILLE"
+  },
+  "W": {
+    "N": "ASTORIA - DITMARS BLVD",
+    "S": "WHITEHALL ST"
+  },
+  "Z": {
+    "N": "JAMAICA CENTER - PARSONS / ARCHER",
+    "S": "BROAD ST"
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "url": "http://datamine.mta.info/files/k38dkwh992dk/gtfs",
+    "routes": "2 3 4 5 6 GS"
+  },
+  {
+    "url": "http://datamine.mta.info/files/k38dkwh992dk/gtfs-l",
+    "routes": "L"
+  },
+  {
+    "url": "http://datamine.mta.info/files/k38dkwh992dk/gtfs-ace",
+    "routes": "A C E"
+  },
+  {
+    "url": "http://datamine.mta.info/files/k38dkwh992dk/gtfs-nqrw",
+    "routes": "N Q R W"
+  },
+  {
+    "url": "http://datamine.mta.info/files/k38dkwh992dk/gtfs-bdfm",
+    "routes": "B D F M"
+  },
+  {
+    "url": "http://datamine.mta.info/files/k38dkwh992dk/gtfs-si",
+    "routes": "SI"
+  },
+  {
+    "url": "http://datamine.mta.info/files/k38dkwh992dk/gtfs-g",
+    "routes": "G"
+  },
+  {
+    "url": "http://datamine.mta.info/files/k38dkwh992dk/gtfs-jz",
+    "routes": "J Z"
+  },
+  {
+    "url": "http://datamine.mta.info/files/k38dkwh992dk/gtfs-7",
+    "routes": "7"
+  }
+]

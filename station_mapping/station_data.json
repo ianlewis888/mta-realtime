@@ -1,0 +1,1990 @@
+{
+  "101": {
+    "complexId": "293",
+    "stationName": "Van Cortlandt Park - 242 St"
+  },
+  "103": {
+    "complexId": "294",
+    "stationName": "238 St"
+  },
+  "104": {
+    "complexId": "295",
+    "stationName": "231 St"
+  },
+  "106": {
+    "complexId": "296",
+    "stationName": "Marble Hill - 225 St"
+  },
+  "107": {
+    "complexId": "297",
+    "stationName": "215 St"
+  },
+  "108": {
+    "complexId": "298",
+    "stationName": "207 St"
+  },
+  "109": {
+    "complexId": "299",
+    "stationName": "Dyckman St"
+  },
+  "110": {
+    "complexId": "300",
+    "stationName": "191 St"
+  },
+  "111": {
+    "complexId": "301",
+    "stationName": "181 St"
+  },
+  "112": {
+    "complexId": "605",
+    "stationName": "168 St - Washington Hts"
+  },
+  "113": {
+    "complexId": "303",
+    "stationName": "157 St"
+  },
+  "114": {
+    "complexId": "304",
+    "stationName": "145 St"
+  },
+  "115": {
+    "complexId": "305",
+    "stationName": "137 St - City College"
+  },
+  "116": {
+    "complexId": "306",
+    "stationName": "125 St"
+  },
+  "117": {
+    "complexId": "307",
+    "stationName": "116 St - Columbia University"
+  },
+  "118": {
+    "complexId": "308",
+    "stationName": "Cathedral Pkwy"
+  },
+  "119": {
+    "complexId": "309",
+    "stationName": "103 St"
+  },
+  "120": {
+    "complexId": "310",
+    "stationName": "96 St"
+  },
+  "121": {
+    "complexId": "311",
+    "stationName": "86 St"
+  },
+  "122": {
+    "complexId": "312",
+    "stationName": "79 St"
+  },
+  "123": {
+    "complexId": "313",
+    "stationName": "72 St"
+  },
+  "124": {
+    "complexId": "314",
+    "stationName": "66 St - Lincoln Center"
+  },
+  "125": {
+    "complexId": "614",
+    "stationName": "59 St - Columbus Circle"
+  },
+  "126": {
+    "complexId": "316",
+    "stationName": "50 St"
+  },
+  "127": {
+    "complexId": "611",
+    "stationName": "Times Sq - 42 St"
+  },
+  "128": {
+    "complexId": "318",
+    "stationName": "34 St - Penn Station"
+  },
+  "129": {
+    "complexId": "319",
+    "stationName": "28 St"
+  },
+  "130": {
+    "complexId": "320",
+    "stationName": "23 St"
+  },
+  "131": {
+    "complexId": "321",
+    "stationName": "18 St"
+  },
+  "132": {
+    "complexId": "601",
+    "stationName": "14 St"
+  },
+  "133": {
+    "complexId": "323",
+    "stationName": "Christopher St - Sheridan Sq"
+  },
+  "134": {
+    "complexId": "324",
+    "stationName": "Houston St"
+  },
+  "135": {
+    "complexId": "325",
+    "stationName": "Canal St"
+  },
+  "136": {
+    "complexId": "326",
+    "stationName": "Franklin St"
+  },
+  "137": {
+    "complexId": "327",
+    "stationName": "Chambers St"
+  },
+  "138": {
+    "complexId": "328",
+    "stationName": "Cortlandt St"
+  },
+  "139": {
+    "complexId": "329",
+    "stationName": "Rector St"
+  },
+  "142": {
+    "complexId": "635",
+    "stationName": "South Ferry / Whitehall St"
+  },
+  "201": {
+    "complexId": "416",
+    "stationName": "Wakefield - 241 St"
+  },
+  "204": {
+    "complexId": "417",
+    "stationName": "Nereid Av"
+  },
+  "205": {
+    "complexId": "418",
+    "stationName": "233 St"
+  },
+  "206": {
+    "complexId": "419",
+    "stationName": "225 St"
+  },
+  "207": {
+    "complexId": "420",
+    "stationName": "219 St"
+  },
+  "208": {
+    "complexId": "421",
+    "stationName": "Gun Hill Rd"
+  },
+  "209": {
+    "complexId": "422",
+    "stationName": "Burke Av"
+  },
+  "210": {
+    "complexId": "423",
+    "stationName": "Allerton Av"
+  },
+  "211": {
+    "complexId": "424",
+    "stationName": "Pelham Pkwy"
+  },
+  "212": {
+    "complexId": "425",
+    "stationName": "Bronx Park East"
+  },
+  "213": {
+    "complexId": "426",
+    "stationName": "E 180 St"
+  },
+  "214": {
+    "complexId": "427",
+    "stationName": "West Farms Sq - E Tremont Av"
+  },
+  "215": {
+    "complexId": "428",
+    "stationName": "174 St"
+  },
+  "216": {
+    "complexId": "429",
+    "stationName": "Freeman St"
+  },
+  "217": {
+    "complexId": "430",
+    "stationName": "Simpson St"
+  },
+  "218": {
+    "complexId": "431",
+    "stationName": "Intervale Av"
+  },
+  "219": {
+    "complexId": "432",
+    "stationName": "Prospect Av"
+  },
+  "220": {
+    "complexId": "433",
+    "stationName": "Jackson Av"
+  },
+  "221": {
+    "complexId": "434",
+    "stationName": "3 Av - 149 St"
+  },
+  "222": {
+    "complexId": "603",
+    "stationName": "149 St - Grand Concourse"
+  },
+  "224": {
+    "complexId": "438",
+    "stationName": "135 St"
+  },
+  "225": {
+    "complexId": "439",
+    "stationName": "125 St"
+  },
+  "226": {
+    "complexId": "440",
+    "stationName": "116 St"
+  },
+  "227": {
+    "complexId": "441",
+    "stationName": "Central Park North (110 St)"
+  },
+  "228": {
+    "complexId": "624",
+    "stationName": "Park Pl"
+  },
+  "229": {
+    "complexId": "628",
+    "stationName": "Fulton St"
+  },
+  "230": {
+    "complexId": "333",
+    "stationName": "Wall St"
+  },
+  "231": {
+    "complexId": "334",
+    "stationName": "Clark St"
+  },
+  "232": {
+    "complexId": "620",
+    "stationName": "Borough Hall"
+  },
+  "233": {
+    "complexId": "336",
+    "stationName": "Hoyt St"
+  },
+  "234": {
+    "complexId": "337",
+    "stationName": "Nevins St"
+  },
+  "235": {
+    "complexId": "617",
+    "stationName": "Atlantic Av - Barclays Ctr"
+  },
+  "236": {
+    "complexId": "339",
+    "stationName": "Bergen St"
+  },
+  "237": {
+    "complexId": "340",
+    "stationName": "Grand Army Plaza"
+  },
+  "238": {
+    "complexId": "341",
+    "stationName": "Eastern Pkwy - Brooklyn Museum"
+  },
+  "239": {
+    "complexId": "626",
+    "stationName": "Franklin Av"
+  },
+  "241": {
+    "complexId": "353",
+    "stationName": "President St"
+  },
+  "242": {
+    "complexId": "354",
+    "stationName": "Sterling St"
+  },
+  "243": {
+    "complexId": "355",
+    "stationName": "Winthrop St"
+  },
+  "244": {
+    "complexId": "356",
+    "stationName": "Church Av"
+  },
+  "245": {
+    "complexId": "357",
+    "stationName": "Beverly Rd"
+  },
+  "246": {
+    "complexId": "358",
+    "stationName": "Newkirk Av"
+  },
+  "247": {
+    "complexId": "359",
+    "stationName": "Flatbush Av - Brooklyn College"
+  },
+  "248": {
+    "complexId": "343",
+    "stationName": "Nostrand Av"
+  },
+  "249": {
+    "complexId": "344",
+    "stationName": "Kingston Av"
+  },
+  "250": {
+    "complexId": "345",
+    "stationName": "Crown Hts - Utica Av"
+  },
+  "251": {
+    "complexId": "346",
+    "stationName": "Sutter Av - Rutland Rd"
+  },
+  "252": {
+    "complexId": "347",
+    "stationName": "Saratoga Av"
+  },
+  "253": {
+    "complexId": "348",
+    "stationName": "Rockaway Av"
+  },
+  "254": {
+    "complexId": "349",
+    "stationName": "Junius St"
+  },
+  "255": {
+    "complexId": "350",
+    "stationName": "Pennsylvania Av"
+  },
+  "256": {
+    "complexId": "351",
+    "stationName": "Van Siclen Av"
+  },
+  "257": {
+    "complexId": "352",
+    "stationName": "New Lots Av"
+  },
+  "301": {
+    "complexId": "436",
+    "stationName": "Harlem - 148 St"
+  },
+  "302": {
+    "complexId": "437",
+    "stationName": "145 St"
+  },
+  "401": {
+    "complexId": "378",
+    "stationName": "Woodlawn"
+  },
+  "402": {
+    "complexId": "379",
+    "stationName": "Mosholu Pkwy"
+  },
+  "405": {
+    "complexId": "380",
+    "stationName": "Bedford Park Blvd - Lehman College"
+  },
+  "406": {
+    "complexId": "381",
+    "stationName": "Kingsbridge Rd"
+  },
+  "407": {
+    "complexId": "382",
+    "stationName": "Fordham Rd"
+  },
+  "408": {
+    "complexId": "383",
+    "stationName": "183 St"
+  },
+  "409": {
+    "complexId": "384",
+    "stationName": "Burnside Av"
+  },
+  "410": {
+    "complexId": "385",
+    "stationName": "176 St"
+  },
+  "411": {
+    "complexId": "386",
+    "stationName": "Mt Eden Av"
+  },
+  "412": {
+    "complexId": "387",
+    "stationName": "170 St"
+  },
+  "413": {
+    "complexId": "388",
+    "stationName": "167 St"
+  },
+  "414": {
+    "complexId": "604",
+    "stationName": "161 St - Yankee Stadium"
+  },
+  "415": {
+    "complexId": "603",
+    "stationName": "149 St - Grand Concourse"
+  },
+  "416": {
+    "complexId": "391",
+    "stationName": "138 St - Grand Concourse"
+  },
+  "418": {
+    "complexId": "628",
+    "stationName": "Fulton St"
+  },
+  "419": {
+    "complexId": "413",
+    "stationName": "Wall St"
+  },
+  "420": {
+    "complexId": "414",
+    "stationName": "Bowling Green"
+  },
+  "423": {
+    "complexId": "620",
+    "stationName": "Borough Hall"
+  },
+  "501": {
+    "complexId": "442",
+    "stationName": "Eastchester - Dyre Av"
+  },
+  "502": {
+    "complexId": "443",
+    "stationName": "Baychester Av"
+  },
+  "503": {
+    "complexId": "444",
+    "stationName": "Gun Hill Rd"
+  },
+  "504": {
+    "complexId": "445",
+    "stationName": "Pelham Pkwy"
+  },
+  "505": {
+    "complexId": "446",
+    "stationName": "Morris Park"
+  },
+  "601": {
+    "complexId": "360",
+    "stationName": "Pelham Bay Park"
+  },
+  "602": {
+    "complexId": "361",
+    "stationName": "Buhre Av"
+  },
+  "603": {
+    "complexId": "362",
+    "stationName": "Middletown Rd"
+  },
+  "604": {
+    "complexId": "363",
+    "stationName": "Westchester Sq - E Tremont Av"
+  },
+  "606": {
+    "complexId": "364",
+    "stationName": "Zerega Av"
+  },
+  "607": {
+    "complexId": "365",
+    "stationName": "Castle Hill Av"
+  },
+  "608": {
+    "complexId": "366",
+    "stationName": "Parkchester"
+  },
+  "609": {
+    "complexId": "367",
+    "stationName": "St Lawrence Av"
+  },
+  "610": {
+    "complexId": "368",
+    "stationName": "Morrison Av- Sound View"
+  },
+  "611": {
+    "complexId": "369",
+    "stationName": "Elder Av"
+  },
+  "612": {
+    "complexId": "370",
+    "stationName": "Whitlock Av"
+  },
+  "613": {
+    "complexId": "371",
+    "stationName": "Hunts Point Av"
+  },
+  "614": {
+    "complexId": "372",
+    "stationName": "Longwood Av"
+  },
+  "615": {
+    "complexId": "373",
+    "stationName": "E 149 St"
+  },
+  "616": {
+    "complexId": "374",
+    "stationName": "E 143 St - St Mary's St"
+  },
+  "617": {
+    "complexId": "375",
+    "stationName": "Cypress Av"
+  },
+  "618": {
+    "complexId": "376",
+    "stationName": "Brook Av"
+  },
+  "619": {
+    "complexId": "377",
+    "stationName": "3 Av - 138 St"
+  },
+  "621": {
+    "complexId": "392",
+    "stationName": "125 St"
+  },
+  "622": {
+    "complexId": "393",
+    "stationName": "116 St"
+  },
+  "623": {
+    "complexId": "394",
+    "stationName": "110 St"
+  },
+  "624": {
+    "complexId": "395",
+    "stationName": "103 St"
+  },
+  "625": {
+    "complexId": "396",
+    "stationName": "96 St"
+  },
+  "626": {
+    "complexId": "397",
+    "stationName": "86 St"
+  },
+  "627": {
+    "complexId": "398",
+    "stationName": "77 St"
+  },
+  "628": {
+    "complexId": "399",
+    "stationName": "68 St - Hunter College"
+  },
+  "629": {
+    "complexId": "613",
+    "stationName": "59 St"
+  },
+  "630": {
+    "complexId": "612",
+    "stationName": "51 St"
+  },
+  "631": {
+    "complexId": "610",
+    "stationName": "Grand Central - 42 St"
+  },
+  "632": {
+    "complexId": "403",
+    "stationName": "33 St"
+  },
+  "633": {
+    "complexId": "404",
+    "stationName": "28 St"
+  },
+  "634": {
+    "complexId": "405",
+    "stationName": "23 St"
+  },
+  "635": {
+    "complexId": "602",
+    "stationName": "14 St - Union Sq"
+  },
+  "636": {
+    "complexId": "407",
+    "stationName": "Astor Pl"
+  },
+  "637": {
+    "complexId": "619",
+    "stationName": "Bleecker St"
+  },
+  "638": {
+    "complexId": "409",
+    "stationName": "Spring St"
+  },
+  "639": {
+    "complexId": "623",
+    "stationName": "Canal St"
+  },
+  "640": {
+    "complexId": "622",
+    "stationName": "Brooklyn Bridge - City Hall"
+  },
+  "701": {
+    "complexId": "447",
+    "stationName": "Flushing - Main St"
+  },
+  "702": {
+    "complexId": "448",
+    "stationName": "Mets - Willets Point"
+  },
+  "705": {
+    "complexId": "449",
+    "stationName": "111 St"
+  },
+  "706": {
+    "complexId": "450",
+    "stationName": "103 St - Corona Plaza"
+  },
+  "707": {
+    "complexId": "451",
+    "stationName": "Junction Blvd"
+  },
+  "708": {
+    "complexId": "452",
+    "stationName": "90 St - Elmhurst Av"
+  },
+  "709": {
+    "complexId": "453",
+    "stationName": "82 St - Jackson Hts"
+  },
+  "710": {
+    "complexId": "616",
+    "stationName": "74 St - Broadway"
+  },
+  "711": {
+    "complexId": "455",
+    "stationName": "69 St"
+  },
+  "712": {
+    "complexId": "456",
+    "stationName": "Woodside - 61 St"
+  },
+  "713": {
+    "complexId": "457",
+    "stationName": "52 St"
+  },
+  "714": {
+    "complexId": "458",
+    "stationName": "46 St"
+  },
+  "715": {
+    "complexId": "459",
+    "stationName": "40 St"
+  },
+  "716": {
+    "complexId": "460",
+    "stationName": "33 St"
+  },
+  "718": {
+    "complexId": "461",
+    "stationName": "Queensboro Plaza"
+  },
+  "719": {
+    "complexId": "606",
+    "stationName": "Court Sq"
+  },
+  "720": {
+    "complexId": "463",
+    "stationName": "Hunters Point Av"
+  },
+  "721": {
+    "complexId": "464",
+    "stationName": "Vernon Blvd - Jackson Av"
+  },
+  "723": {
+    "complexId": "610",
+    "stationName": "Grand Central - 42 St"
+  },
+  "724": {
+    "complexId": "609",
+    "stationName": "5 Av"
+  },
+  "725": {
+    "complexId": "611",
+    "stationName": "Times Sq - 42 St"
+  },
+  "726": {
+    "complexId": "471",
+    "stationName": "34 St - 11 Av"
+  },
+  "901": {
+    "complexId": "610",
+    "stationName": "Grand Central - 42 St"
+  },
+  "902": {
+    "complexId": "611",
+    "stationName": "Times Sq - 42 St"
+  },
+  "R01": {
+    "complexId": "1",
+    "stationName": "Astoria - Ditmars Blvd"
+  },
+  "R03": {
+    "complexId": "2",
+    "stationName": "Astoria Blvd"
+  },
+  "R04": {
+    "complexId": "3",
+    "stationName": "30 Av"
+  },
+  "R05": {
+    "complexId": "4",
+    "stationName": "Broadway"
+  },
+  "R06": {
+    "complexId": "5",
+    "stationName": "36 Av"
+  },
+  "R08": {
+    "complexId": "6",
+    "stationName": "39 Av"
+  },
+  "R11": {
+    "complexId": "613",
+    "stationName": "Lexington Av/59 St"
+  },
+  "R13": {
+    "complexId": "8",
+    "stationName": "5 Av/59 St"
+  },
+  "R14": {
+    "complexId": "9",
+    "stationName": "57 St - 7 Av"
+  },
+  "R15": {
+    "complexId": "10",
+    "stationName": "49 St"
+  },
+  "R16": {
+    "complexId": "611",
+    "stationName": "Times Sq - 42 St"
+  },
+  "R17": {
+    "complexId": "607",
+    "stationName": "34 St - Herald Sq"
+  },
+  "R18": {
+    "complexId": "13",
+    "stationName": "28 St"
+  },
+  "R19": {
+    "complexId": "14",
+    "stationName": "23 St"
+  },
+  "R20": {
+    "complexId": "602",
+    "stationName": "14 St - Union Sq"
+  },
+  "R21": {
+    "complexId": "16",
+    "stationName": "8 St - NYU"
+  },
+  "R22": {
+    "complexId": "17",
+    "stationName": "Prince St"
+  },
+  "R23": {
+    "complexId": "623",
+    "stationName": "Canal St"
+  },
+  "Q01": {
+    "complexId": "623",
+    "stationName": "Canal St"
+  },
+  "R24": {
+    "complexId": "20",
+    "stationName": "City Hall"
+  },
+  "R25": {
+    "complexId": "21",
+    "stationName": "Cortlandt St"
+  },
+  "R26": {
+    "complexId": "22",
+    "stationName": "Rector St"
+  },
+  "R27": {
+    "complexId": "635",
+    "stationName": "South Ferry / Whitehall St"
+  },
+  "R28": {
+    "complexId": "620",
+    "stationName": "Court St"
+  },
+  "R29": {
+    "complexId": "636",
+    "stationName": "Jay St - MetroTech"
+  },
+  "R30": {
+    "complexId": "26",
+    "stationName": "DeKalb Av"
+  },
+  "R31": {
+    "complexId": "617",
+    "stationName": "Atlantic Av - Barclays Ctr"
+  },
+  "R32": {
+    "complexId": "28",
+    "stationName": "Union St"
+  },
+  "R33": {
+    "complexId": "608",
+    "stationName": "9 St"
+  },
+  "R34": {
+    "complexId": "30",
+    "stationName": "Prospect Av"
+  },
+  "R35": {
+    "complexId": "31",
+    "stationName": "25 St"
+  },
+  "R36": {
+    "complexId": "32",
+    "stationName": "36 St"
+  },
+  "R39": {
+    "complexId": "33",
+    "stationName": "45 St"
+  },
+  "R40": {
+    "complexId": "34",
+    "stationName": "53 St"
+  },
+  "R41": {
+    "complexId": "35",
+    "stationName": "59 St"
+  },
+  "R42": {
+    "complexId": "36",
+    "stationName": "Bay Ridge Av"
+  },
+  "R43": {
+    "complexId": "37",
+    "stationName": "77 St"
+  },
+  "R44": {
+    "complexId": "38",
+    "stationName": "86 St"
+  },
+  "R45": {
+    "complexId": "39",
+    "stationName": "Bay Ridge - 95 St"
+  },
+  "D24": {
+    "complexId": "617",
+    "stationName": "Atlantic Av - Barclays Ctr"
+  },
+  "D25": {
+    "complexId": "41",
+    "stationName": "7 Av"
+  },
+  "D26": {
+    "complexId": "42",
+    "stationName": "Prospect Park"
+  },
+  "D27": {
+    "complexId": "43",
+    "stationName": "Parkside Av"
+  },
+  "D28": {
+    "complexId": "44",
+    "stationName": "Church Av"
+  },
+  "D29": {
+    "complexId": "45",
+    "stationName": "Beverley Rd"
+  },
+  "D30": {
+    "complexId": "46",
+    "stationName": "Cortelyou Rd"
+  },
+  "D31": {
+    "complexId": "47",
+    "stationName": "Newkirk Plaza"
+  },
+  "D32": {
+    "complexId": "48",
+    "stationName": "Avenue H"
+  },
+  "D33": {
+    "complexId": "49",
+    "stationName": "Avenue J"
+  },
+  "D34": {
+    "complexId": "50",
+    "stationName": "Avenue M"
+  },
+  "D35": {
+    "complexId": "51",
+    "stationName": "Kings Hwy"
+  },
+  "D37": {
+    "complexId": "52",
+    "stationName": "Avenue U"
+  },
+  "D38": {
+    "complexId": "53",
+    "stationName": "Neck Rd"
+  },
+  "D39": {
+    "complexId": "54",
+    "stationName": "Sheepshead Bay"
+  },
+  "D40": {
+    "complexId": "55",
+    "stationName": "Brighton Beach"
+  },
+  "D41": {
+    "complexId": "56",
+    "stationName": "Ocean Pkwy"
+  },
+  "D42": {
+    "complexId": "57",
+    "stationName": "W 8 St - NY Aquarium"
+  },
+  "D43": {
+    "complexId": "58",
+    "stationName": "Coney Island - Stillwell Av"
+  },
+  "B12": {
+    "complexId": "59",
+    "stationName": "9 Av"
+  },
+  "B13": {
+    "complexId": "60",
+    "stationName": "Fort Hamilton Pkwy"
+  },
+  "B14": {
+    "complexId": "61",
+    "stationName": "50 St"
+  },
+  "B15": {
+    "complexId": "62",
+    "stationName": "55 St"
+  },
+  "B16": {
+    "complexId": "615",
+    "stationName": "62 St"
+  },
+  "B17": {
+    "complexId": "64",
+    "stationName": "71 St"
+  },
+  "B18": {
+    "complexId": "65",
+    "stationName": "79 St"
+  },
+  "B19": {
+    "complexId": "66",
+    "stationName": "18 Av"
+  },
+  "B20": {
+    "complexId": "67",
+    "stationName": "20 Av"
+  },
+  "B21": {
+    "complexId": "68",
+    "stationName": "Bay Pkwy"
+  },
+  "B22": {
+    "complexId": "69",
+    "stationName": "25 Av"
+  },
+  "B23": {
+    "complexId": "70",
+    "stationName": "Bay 50 St"
+  },
+  "N02": {
+    "complexId": "71",
+    "stationName": "8 Av"
+  },
+  "N03": {
+    "complexId": "72",
+    "stationName": "Fort Hamilton Pkwy"
+  },
+  "N04": {
+    "complexId": "615",
+    "stationName": "New Utrecht Av"
+  },
+  "N05": {
+    "complexId": "74",
+    "stationName": "18 Av"
+  },
+  "N06": {
+    "complexId": "75",
+    "stationName": "20 Av"
+  },
+  "N07": {
+    "complexId": "76",
+    "stationName": "Bay Pkwy"
+  },
+  "N08": {
+    "complexId": "77",
+    "stationName": "Kings Hwy"
+  },
+  "N09": {
+    "complexId": "78",
+    "stationName": "Avenue U"
+  },
+  "N10": {
+    "complexId": "79",
+    "stationName": "86 St"
+  },
+  "J12": {
+    "complexId": "80",
+    "stationName": "121 St"
+  },
+  "J13": {
+    "complexId": "81",
+    "stationName": "111 St"
+  },
+  "J14": {
+    "complexId": "82",
+    "stationName": "104 St"
+  },
+  "J15": {
+    "complexId": "83",
+    "stationName": "Woodhaven Blvd"
+  },
+  "J16": {
+    "complexId": "84",
+    "stationName": "85 St - Forest Pkwy"
+  },
+  "J17": {
+    "complexId": "85",
+    "stationName": "75 St"
+  },
+  "J19": {
+    "complexId": "86",
+    "stationName": "Cypress Hills"
+  },
+  "J20": {
+    "complexId": "87",
+    "stationName": "Crescent St"
+  },
+  "J21": {
+    "complexId": "88",
+    "stationName": "Norwood Av"
+  },
+  "J22": {
+    "complexId": "89",
+    "stationName": "Cleveland St"
+  },
+  "J23": {
+    "complexId": "90",
+    "stationName": "Van Siclen Av"
+  },
+  "J24": {
+    "complexId": "91",
+    "stationName": "Alabama Av"
+  },
+  "J27": {
+    "complexId": "621",
+    "stationName": "Broadway Jct"
+  },
+  "J28": {
+    "complexId": "93",
+    "stationName": "Chauncey St"
+  },
+  "J29": {
+    "complexId": "94",
+    "stationName": "Halsey St"
+  },
+  "J30": {
+    "complexId": "95",
+    "stationName": "Gates Av"
+  },
+  "J31": {
+    "complexId": "96",
+    "stationName": "Kosciuszko St"
+  },
+  "M11": {
+    "complexId": "97",
+    "stationName": "Myrtle Av"
+  },
+  "M12": {
+    "complexId": "98",
+    "stationName": "Flushing Av"
+  },
+  "M13": {
+    "complexId": "99",
+    "stationName": "Lorimer St"
+  },
+  "M14": {
+    "complexId": "100",
+    "stationName": "Hewes St"
+  },
+  "M16": {
+    "complexId": "101",
+    "stationName": "Marcy Av"
+  },
+  "M18": {
+    "complexId": "625",
+    "stationName": "Essex St"
+  },
+  "M19": {
+    "complexId": "103",
+    "stationName": "Bowery"
+  },
+  "M20": {
+    "complexId": "623",
+    "stationName": "Canal St"
+  },
+  "M21": {
+    "complexId": "622",
+    "stationName": "Chambers St"
+  },
+  "M22": {
+    "complexId": "628",
+    "stationName": "Fulton St"
+  },
+  "M23": {
+    "complexId": "107",
+    "stationName": "Broad St"
+  },
+  "M01": {
+    "complexId": "108",
+    "stationName": "Middle Village - Metropolitan Av"
+  },
+  "M04": {
+    "complexId": "109",
+    "stationName": "Fresh Pond Rd"
+  },
+  "M05": {
+    "complexId": "110",
+    "stationName": "Forest Av"
+  },
+  "M06": {
+    "complexId": "111",
+    "stationName": "Seneca Av"
+  },
+  "M08": {
+    "complexId": "630",
+    "stationName": "Myrtle - Wyckoff Avs"
+  },
+  "M09": {
+    "complexId": "113",
+    "stationName": "Knickerbocker Av"
+  },
+  "M10": {
+    "complexId": "114",
+    "stationName": "Central Av"
+  },
+  "L01": {
+    "complexId": "618",
+    "stationName": "8 Av"
+  },
+  "L02": {
+    "complexId": "601",
+    "stationName": "6 Av"
+  },
+  "L03": {
+    "complexId": "602",
+    "stationName": "Union Sq - 14 St"
+  },
+  "L05": {
+    "complexId": "118",
+    "stationName": "3 Av"
+  },
+  "L06": {
+    "complexId": "119",
+    "stationName": "1 Av"
+  },
+  "L08": {
+    "complexId": "120",
+    "stationName": "Bedford Av"
+  },
+  "L10": {
+    "complexId": "629",
+    "stationName": "Lorimer St"
+  },
+  "L11": {
+    "complexId": "122",
+    "stationName": "Graham Av"
+  },
+  "L12": {
+    "complexId": "123",
+    "stationName": "Grand St"
+  },
+  "L13": {
+    "complexId": "124",
+    "stationName": "Montrose Av"
+  },
+  "L14": {
+    "complexId": "125",
+    "stationName": "Morgan Av"
+  },
+  "L15": {
+    "complexId": "126",
+    "stationName": "Jefferson St"
+  },
+  "L16": {
+    "complexId": "127",
+    "stationName": "DeKalb Av"
+  },
+  "L17": {
+    "complexId": "630",
+    "stationName": "Myrtle - Wyckoff Avs"
+  },
+  "L19": {
+    "complexId": "129",
+    "stationName": "Halsey St"
+  },
+  "L20": {
+    "complexId": "130",
+    "stationName": "Wilson Av"
+  },
+  "L21": {
+    "complexId": "131",
+    "stationName": "Bushwick Av - Aberdeen St"
+  },
+  "L22": {
+    "complexId": "621",
+    "stationName": "Broadway Jct"
+  },
+  "L24": {
+    "complexId": "133",
+    "stationName": "Atlantic Av"
+  },
+  "L25": {
+    "complexId": "134",
+    "stationName": "Sutter Av"
+  },
+  "L26": {
+    "complexId": "135",
+    "stationName": "Livonia Av"
+  },
+  "L27": {
+    "complexId": "136",
+    "stationName": "New Lots Av"
+  },
+  "L28": {
+    "complexId": "137",
+    "stationName": "E 105 St"
+  },
+  "L29": {
+    "complexId": "138",
+    "stationName": "Canarsie - Rockaway Pkwy"
+  },
+  "S01": {
+    "complexId": "627",
+    "stationName": "Franklin Av"
+  },
+  "S03": {
+    "complexId": "141",
+    "stationName": "Park Pl"
+  },
+  "S04": {
+    "complexId": "626",
+    "stationName": "Botanic Garden"
+  },
+  "A02": {
+    "complexId": "143",
+    "stationName": "Inwood - 207 St"
+  },
+  "A03": {
+    "complexId": "144",
+    "stationName": "Dyckman St"
+  },
+  "A05": {
+    "complexId": "145",
+    "stationName": "190 St"
+  },
+  "A06": {
+    "complexId": "146",
+    "stationName": "181 St"
+  },
+  "A07": {
+    "complexId": "147",
+    "stationName": "175 St"
+  },
+  "A09": {
+    "complexId": "605",
+    "stationName": "168 St"
+  },
+  "A10": {
+    "complexId": "149",
+    "stationName": "163 St - Amsterdam Av"
+  },
+  "A11": {
+    "complexId": "150",
+    "stationName": "155 St"
+  },
+  "A12": {
+    "complexId": "151",
+    "stationName": "145 St"
+  },
+  "D13": {
+    "complexId": "151",
+    "stationName": "145 St"
+  },
+  "A14": {
+    "complexId": "152",
+    "stationName": "135 St"
+  },
+  "A15": {
+    "complexId": "153",
+    "stationName": "125 St"
+  },
+  "A16": {
+    "complexId": "154",
+    "stationName": "116 St"
+  },
+  "A17": {
+    "complexId": "155",
+    "stationName": "Cathedral Pkwy (110 St)"
+  },
+  "A18": {
+    "complexId": "156",
+    "stationName": "103 St"
+  },
+  "A19": {
+    "complexId": "157",
+    "stationName": "96 St"
+  },
+  "A20": {
+    "complexId": "158",
+    "stationName": "86 St"
+  },
+  "A21": {
+    "complexId": "159",
+    "stationName": "81 St - Museum of Natural History"
+  },
+  "A22": {
+    "complexId": "160",
+    "stationName": "72 St"
+  },
+  "A24": {
+    "complexId": "614",
+    "stationName": "59 St - Columbus Circle"
+  },
+  "A25": {
+    "complexId": "162",
+    "stationName": "50 St"
+  },
+  "A27": {
+    "complexId": "611",
+    "stationName": "42 St - Port Authority Bus Terminal"
+  },
+  "A28": {
+    "complexId": "164",
+    "stationName": "34 St - Penn Station"
+  },
+  "A30": {
+    "complexId": "165",
+    "stationName": "23 St"
+  },
+  "A31": {
+    "complexId": "618",
+    "stationName": "14 St"
+  },
+  "A32": {
+    "complexId": "167",
+    "stationName": "W 4 St"
+  },
+  "D20": {
+    "complexId": "167",
+    "stationName": "W 4 St"
+  },
+  "A33": {
+    "complexId": "168",
+    "stationName": "Spring St"
+  },
+  "A34": {
+    "complexId": "169",
+    "stationName": "Canal St"
+  },
+  "A36": {
+    "complexId": "624",
+    "stationName": "Chambers St"
+  },
+  "E01": {
+    "complexId": "624",
+    "stationName": "World Trade Center"
+  },
+  "A38": {
+    "complexId": "628",
+    "stationName": "Fulton St"
+  },
+  "A40": {
+    "complexId": "173",
+    "stationName": "High St"
+  },
+  "A41": {
+    "complexId": "636",
+    "stationName": "Jay St - MetroTech"
+  },
+  "A42": {
+    "complexId": "175",
+    "stationName": "Hoyt - Schermerhorn Sts"
+  },
+  "A43": {
+    "complexId": "176",
+    "stationName": "Lafayette Av"
+  },
+  "A44": {
+    "complexId": "177",
+    "stationName": "Clinton - Washington Avs"
+  },
+  "A45": {
+    "complexId": "627",
+    "stationName": "Franklin Av"
+  },
+  "A46": {
+    "complexId": "179",
+    "stationName": "Nostrand Av"
+  },
+  "A47": {
+    "complexId": "180",
+    "stationName": "Kingston - Throop Avs"
+  },
+  "A48": {
+    "complexId": "181",
+    "stationName": "Utica Av"
+  },
+  "A49": {
+    "complexId": "182",
+    "stationName": "Ralph Av"
+  },
+  "A50": {
+    "complexId": "183",
+    "stationName": "Rockaway Av"
+  },
+  "A51": {
+    "complexId": "621",
+    "stationName": "Broadway Jct"
+  },
+  "A52": {
+    "complexId": "185",
+    "stationName": "Liberty Av"
+  },
+  "A53": {
+    "complexId": "186",
+    "stationName": "Van Siclen Av"
+  },
+  "A54": {
+    "complexId": "187",
+    "stationName": "Shepherd Av"
+  },
+  "A55": {
+    "complexId": "188",
+    "stationName": "Euclid Av"
+  },
+  "A57": {
+    "complexId": "189",
+    "stationName": "Grant Av"
+  },
+  "A59": {
+    "complexId": "190",
+    "stationName": "80 St"
+  },
+  "A60": {
+    "complexId": "191",
+    "stationName": "88 St"
+  },
+  "A61": {
+    "complexId": "192",
+    "stationName": "Rockaway Blvd"
+  },
+  "A63": {
+    "complexId": "193",
+    "stationName": "104 St"
+  },
+  "A64": {
+    "complexId": "194",
+    "stationName": "111 St"
+  },
+  "A65": {
+    "complexId": "195",
+    "stationName": "Ozone Park - Lefferts Blvd"
+  },
+  "H01": {
+    "complexId": "196",
+    "stationName": "Aqueduct Racetrack"
+  },
+  "H02": {
+    "complexId": "197",
+    "stationName": "Aqueduct - N Conduit Av"
+  },
+  "H03": {
+    "complexId": "198",
+    "stationName": "Howard Beach - JFK Airport"
+  },
+  "H04": {
+    "complexId": "199",
+    "stationName": "Broad Channel"
+  },
+  "H19": {
+    "complexId": "199",
+    "stationName": "Broad Channel"
+  },
+  "H12": {
+    "complexId": "200",
+    "stationName": "Beach 90 St"
+  },
+  "H13": {
+    "complexId": "201",
+    "stationName": "Beach 98 St"
+  },
+  "H14": {
+    "complexId": "202",
+    "stationName": "Beach 105 St"
+  },
+  "H15": {
+    "complexId": "203",
+    "stationName": "Rockaway Park - Beach 116 St"
+  },
+  "H06": {
+    "complexId": "204",
+    "stationName": "Beach 67 St"
+  },
+  "H07": {
+    "complexId": "205",
+    "stationName": "Beach 60 St"
+  },
+  "H08": {
+    "complexId": "206",
+    "stationName": "Beach 44 St"
+  },
+  "H09": {
+    "complexId": "207",
+    "stationName": "Beach 36 St"
+  },
+  "H10": {
+    "complexId": "208",
+    "stationName": "Beach 25 St"
+  },
+  "H11": {
+    "complexId": "209",
+    "stationName": "Far Rockaway - Mott Av"
+  },
+  "D01": {
+    "complexId": "210",
+    "stationName": "Norwood - 205 St"
+  },
+  "D03": {
+    "complexId": "211",
+    "stationName": "Bedford Park Blvd"
+  },
+  "D04": {
+    "complexId": "212",
+    "stationName": "Kingsbridge Rd"
+  },
+  "D05": {
+    "complexId": "213",
+    "stationName": "Fordham Rd"
+  },
+  "D06": {
+    "complexId": "214",
+    "stationName": "182-183 Sts"
+  },
+  "D07": {
+    "complexId": "215",
+    "stationName": "Tremont Av"
+  },
+  "D08": {
+    "complexId": "216",
+    "stationName": "174-175 Sts"
+  },
+  "D09": {
+    "complexId": "217",
+    "stationName": "170 St"
+  },
+  "D10": {
+    "complexId": "218",
+    "stationName": "167 St"
+  },
+  "D11": {
+    "complexId": "604",
+    "stationName": "161 St - Yankee Stadium"
+  },
+  "D12": {
+    "complexId": "220",
+    "stationName": "155 St"
+  },
+  "B04": {
+    "complexId": "221",
+    "stationName": "21 St - Queensbridge"
+  },
+  "B06": {
+    "complexId": "222",
+    "stationName": "Roosevelt Island"
+  },
+  "B08": {
+    "complexId": "223",
+    "stationName": "Lexington Av/63 St"
+  },
+  "B10": {
+    "complexId": "224",
+    "stationName": "57 St"
+  },
+  "D15": {
+    "complexId": "225",
+    "stationName": "47-50 Sts - Rockefeller Ctr"
+  },
+  "D16": {
+    "complexId": "609",
+    "stationName": "42 St - Bryant Pk"
+  },
+  "D17": {
+    "complexId": "607",
+    "stationName": "34 St - Herald Sq"
+  },
+  "D18": {
+    "complexId": "228",
+    "stationName": "23 St"
+  },
+  "D19": {
+    "complexId": "601",
+    "stationName": "14 St"
+  },
+  "D21": {
+    "complexId": "619",
+    "stationName": "Broadway-Lafayette St"
+  },
+  "D22": {
+    "complexId": "231",
+    "stationName": "Grand St"
+  },
+  "F14": {
+    "complexId": "232",
+    "stationName": "2 Av"
+  },
+  "F15": {
+    "complexId": "625",
+    "stationName": "Delancey St"
+  },
+  "F16": {
+    "complexId": "234",
+    "stationName": "East Broadway"
+  },
+  "F18": {
+    "complexId": "235",
+    "stationName": "York St"
+  },
+  "F20": {
+    "complexId": "236",
+    "stationName": "Bergen St"
+  },
+  "F21": {
+    "complexId": "237",
+    "stationName": "Carroll St"
+  },
+  "F22": {
+    "complexId": "238",
+    "stationName": "Smith - 9 Sts"
+  },
+  "F23": {
+    "complexId": "608",
+    "stationName": "4 Av"
+  },
+  "F24": {
+    "complexId": "240",
+    "stationName": "7 Av"
+  },
+  "F25": {
+    "complexId": "241",
+    "stationName": "15 St - Prospect Park"
+  },
+  "F26": {
+    "complexId": "242",
+    "stationName": "Fort Hamilton Pkwy"
+  },
+  "F27": {
+    "complexId": "243",
+    "stationName": "Church Av"
+  },
+  "F29": {
+    "complexId": "244",
+    "stationName": "Ditmas Av"
+  },
+  "F30": {
+    "complexId": "245",
+    "stationName": "18 Av"
+  },
+  "F31": {
+    "complexId": "246",
+    "stationName": "Avenue I"
+  },
+  "F32": {
+    "complexId": "247",
+    "stationName": "Bay Pkwy"
+  },
+  "F33": {
+    "complexId": "248",
+    "stationName": "Avenue N"
+  },
+  "F34": {
+    "complexId": "249",
+    "stationName": "Avenue P"
+  },
+  "F35": {
+    "complexId": "250",
+    "stationName": "Kings Hwy"
+  },
+  "F36": {
+    "complexId": "251",
+    "stationName": "Avenue U"
+  },
+  "F38": {
+    "complexId": "252",
+    "stationName": "Avenue X"
+  },
+  "F39": {
+    "complexId": "253",
+    "stationName": "Neptune Av"
+  },
+  "F01": {
+    "complexId": "254",
+    "stationName": "Jamaica - 179 St"
+  },
+  "F02": {
+    "complexId": "255",
+    "stationName": "169 St"
+  },
+  "F03": {
+    "complexId": "256",
+    "stationName": "Parsons Blvd"
+  },
+  "F04": {
+    "complexId": "257",
+    "stationName": "Sutphin Blvd"
+  },
+  "F05": {
+    "complexId": "258",
+    "stationName": "Briarwood - Van Wyck Blvd"
+  },
+  "F06": {
+    "complexId": "259",
+    "stationName": "Kew Gardens - Union Tpke"
+  },
+  "F07": {
+    "complexId": "260",
+    "stationName": "75 Av"
+  },
+  "G08": {
+    "complexId": "261",
+    "stationName": "Forest Hills - 71 Av"
+  },
+  "G09": {
+    "complexId": "262",
+    "stationName": "67 Av"
+  },
+  "G10": {
+    "complexId": "263",
+    "stationName": "63 Dr - Rego Park"
+  },
+  "G11": {
+    "complexId": "264",
+    "stationName": "Woodhaven Blvd"
+  },
+  "G12": {
+    "complexId": "265",
+    "stationName": "Grand Av - Newtown"
+  },
+  "G13": {
+    "complexId": "266",
+    "stationName": "Elmhurst Av"
+  },
+  "G14": {
+    "complexId": "616",
+    "stationName": "Jackson Hts - Roosevelt Av"
+  },
+  "G15": {
+    "complexId": "268",
+    "stationName": "65 St"
+  },
+  "G16": {
+    "complexId": "269",
+    "stationName": "Northern Blvd"
+  },
+  "G18": {
+    "complexId": "270",
+    "stationName": "46 St"
+  },
+  "G19": {
+    "complexId": "271",
+    "stationName": "Steinway St"
+  },
+  "G20": {
+    "complexId": "272",
+    "stationName": "36 St"
+  },
+  "G21": {
+    "complexId": "273",
+    "stationName": "Queens Plaza"
+  },
+  "F09": {
+    "complexId": "606",
+    "stationName": "Court Sq"
+  },
+  "F11": {
+    "complexId": "612",
+    "stationName": "Lexington Av/53 St"
+  },
+  "F12": {
+    "complexId": "276",
+    "stationName": "5 Av/53 St"
+  },
+  "D14": {
+    "complexId": "277",
+    "stationName": "7 Av"
+  },
+  "G05": {
+    "complexId": "278",
+    "stationName": "Jamaica Center - Parsons/Archer"
+  },
+  "G06": {
+    "complexId": "279",
+    "stationName": "Sutphin Blvd - Archer Av - JFK Airport"
+  },
+  "G07": {
+    "complexId": "280",
+    "stationName": "Jamaica - Van Wyck"
+  },
+  "G22": {
+    "complexId": "606",
+    "stationName": "Court Sq"
+  },
+  "G24": {
+    "complexId": "282",
+    "stationName": "21 St"
+  },
+  "G26": {
+    "complexId": "283",
+    "stationName": "Greenpoint Av"
+  },
+  "G28": {
+    "complexId": "284",
+    "stationName": "Nassau Av"
+  },
+  "G29": {
+    "complexId": "629",
+    "stationName": "Metropolitan Av"
+  },
+  "G30": {
+    "complexId": "286",
+    "stationName": "Broadway"
+  },
+  "G31": {
+    "complexId": "287",
+    "stationName": "Flushing Av"
+  },
+  "G32": {
+    "complexId": "288",
+    "stationName": "Myrtle - Willoughby Avs"
+  },
+  "G33": {
+    "complexId": "289",
+    "stationName": "Bedford - Nostrand Avs"
+  },
+  "G34": {
+    "complexId": "290",
+    "stationName": "Classon Av"
+  },
+  "G35": {
+    "complexId": "291",
+    "stationName": "Clinton - Washington Avs"
+  },
+  "G36": {
+    "complexId": "292",
+    "stationName": "Fulton St"
+  },
+  "R09": {
+    "complexId": "461",
+    "stationName": "Queensboro Plaza"
+  },
+  "Q05": {
+    "complexId": "475",
+    "stationName": "96 St"
+  },
+  "Q04": {
+    "complexId": "476",
+    "stationName": "86 St"
+  },
+  "Q03": {
+    "complexId": "477",
+    "stationName": "72 St"
+  },
+  "S31": {
+    "complexId": "501",
+    "stationName": "St George"
+  },
+  "S30": {
+    "complexId": "502",
+    "stationName": "Tompkinsville"
+  },
+  "S29": {
+    "complexId": "503",
+    "stationName": "Stapleton"
+  },
+  "S28": {
+    "complexId": "504",
+    "stationName": "Clifton"
+  },
+  "S27": {
+    "complexId": "505",
+    "stationName": "Grasmere"
+  },
+  "S26": {
+    "complexId": "506",
+    "stationName": "Old Town"
+  },
+  "S25": {
+    "complexId": "507",
+    "stationName": "Dongan Hills"
+  },
+  "S24": {
+    "complexId": "508",
+    "stationName": "Jefferson Av"
+  },
+  "S23": {
+    "complexId": "509",
+    "stationName": "Grant City"
+  },
+  "S22": {
+    "complexId": "510",
+    "stationName": "New Dorp"
+  },
+  "S21": {
+    "complexId": "511",
+    "stationName": "Oakwood Heights"
+  },
+  "S20": {
+    "complexId": "512",
+    "stationName": "Bay Terrace"
+  },
+  "S19": {
+    "complexId": "513",
+    "stationName": "Great Kills"
+  },
+  "S18": {
+    "complexId": "514",
+    "stationName": "Eltingville"
+  },
+  "S17": {
+    "complexId": "515",
+    "stationName": "Annadale"
+  },
+  "S16": {
+    "complexId": "516",
+    "stationName": "Huguenot"
+  },
+  "S15": {
+    "complexId": "517",
+    "stationName": "Prince's Bay"
+  },
+  "S14": {
+    "complexId": "518",
+    "stationName": "Pleasant Plains"
+  },
+  "S13": {
+    "complexId": "519",
+    "stationName": "Richmond Valley"
+  },
+  "S09": {
+    "complexId": "522",
+    "stationName": "Tottenville"
+  },
+  "S11": {
+    "complexId": "523",
+    "stationName": "Arthur Kill"
+  }
+}
