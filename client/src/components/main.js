@@ -6,13 +6,19 @@ import Hero from './hero';
 import StationInput from './station_search/station_input';
 import ArrivalsContainer from './arrivals_table/arrivals_container';
 import FullPageSpinner from './loading_spinners/full_page_spinner';
-import { intitializeFirebase, updateTimestamp, setTimestampInterval } from '../actions/actions.js';
+import {
+  intitializeFirebase,
+  updateTimestamp,
+  setTimestampInterval,
+  updateDB
+} from '../actions/actions.js';
 
 const history = createHistory();
 
 class Main extends Component {
   componentWillMount() {
     this.props.dispatch(intitializeFirebase());
+    this.props.dispatch(updateDB());
     this.props.dispatch(updateTimestamp());
     this.props.dispatch(setTimestampInterval());
   }

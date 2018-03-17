@@ -60,7 +60,7 @@ function sortData(data) {
  */
 
 function writeArrivalsToDB(FeedMessage, res) {
-  console.log(res);
+  // res.append({"Access-Control-Allow-Origin": "*"});
   return firebase.auth()
     .signInWithEmailAndPassword(firebaseCreds.username, firebaseCreds.password)
     .then(() => {
@@ -76,7 +76,7 @@ function writeArrivalsToDB(FeedMessage, res) {
           res.json({ updateStatus: "error", error: error });
         });
     })
-    .catch(function(error, res) {
+    .catch(function(error) {
       res.json({ updateStatus: "error", error: error });
     });
 }

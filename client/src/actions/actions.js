@@ -1,4 +1,5 @@
 import * as firebase from 'firebase';
+import * as axios from 'axios';
 import config from '../data/firebase_config';
 import * as defaultArrivalFilters from '../data/default_arrival_filters.json';
 
@@ -16,6 +17,7 @@ export const TOGGLE_MENU_STATE = "TOGGLE_MENU_STATE";
 export const RESET_MENU_STATE = "RESET_MENU_STATE";
 export const SET_ARRIVAL_FILTERS = "SET_ARRIVAL_FILTERS";
 export const SET_DEFAULT_ARRIVAL_FILTERS = "SET_DEFAULT_ARRIVAL_FILTERS";
+export const UPDATE_DB = "UPDATE_DB";
 
 /*
  * Action Creators
@@ -25,14 +27,6 @@ export const setCurrentLoadState = (loadState) => {
   return {
     type: SET_LOAD_STATE,
     payload: loadState
-  };
-}
-
-export const intitializeFirebase = () => {
-  firebase.initializeApp(config);
-  return {
-    type: INITIALIZE_FIREBASE,
-    payload: true
   };
 }
 
@@ -103,4 +97,27 @@ export const setDefaultArrivalFilters = () => {
     type: SET_DEFAULT_ARRIVAL_FILTERS,
     payload: defaultArrivalFilters
   };
+}
+
+const backEndUrl = "http://localhost:5000/api/arrivals";
+
+export const updateDB = () => {
+  return dispatch => {
+    axios.get(backEndUrl).then(res => {
+      dispatch({
+        type: UPDATE_DB,
+        payload: res.data.updateStatus
+      });
+    });
+  }
+}
+
+export const intitializeFirebase = () => {
+  return dispatch => {
+    firebase.initializeApp(config);
+    return {
+      type: INITIALIZE_FIREBASE,
+      payload: true
+    };
+  }
 }
