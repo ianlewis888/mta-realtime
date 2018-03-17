@@ -1,0 +1,48 @@
+
+.arrivals-table__menu {
+  background-color: lighten($color-dark-2, 4%);
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  color: $color-light-1;
+  height: 0px;
+  transition: height 300ms ease;
+  box-shadow: 0px 10px 10px 0px transparentize($color-dark-2, .5);
+  pointer-events: none;
+  overflow: hidden;
+  font-size: 1.5em;
+}
+
+
+.arrivals-table__menu--expanded {
+  height: 165px;
+  pointer-events: all;
+}
+
+.arrivals-table__menu-component {
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.arrivals-table__menu-select {
+  margin-left: 10px;
+  border: none;
+  border-bottom: solid 2px darken($color-light-1, 10%);
+  outline: none;
+  width: 90px;
+  background: none;
+  color: $color-light-1;
+  appearance: none;
+  padding-bottom: 2px;
+}
+
+.arrivals-table__menu-select > option {
+  color: $color-dark-2;
+}
+
+.arrivals-table__menu-select-icon {
+  transform: translateX(-20px);
+  pointer-events: none;
+}

@@ -1,0 +1,32 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+$color-dark-1: #22333b;
+$color-dark-2: #181613;
+$color-light-1: #f2f2f2;
+
+html, body {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: $color-dark-1;
+  color: $color-light-1;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+td {
+  margin: 0;
+  padding: 0;
+}
+
+@import "hero";
+@import "station-search";
+@import "arrivals-table";
+@import "arrivals-table-menu";

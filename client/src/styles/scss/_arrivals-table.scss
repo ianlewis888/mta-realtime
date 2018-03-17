@@ -1,0 +1,89 @@
+.arrivals-table__container {
+  display: inline-block;
+  border-radius: 3px;
+  margin: 10px;
+  margin-bottom: 5%;
+}
+
+.arrivals-table {
+  position: relative;
+  width: 500px;
+  border-collapse: collapse;
+  box-shadow: 0px 0px 20px 0px $color-dark-2;
+  color: $color-dark-2;
+  background-color: $color-light-1;
+}
+
+.arrivals-table__exit {
+  color: $color-light-1;
+  float: left;
+  transform: translateY(2px);
+}
+
+.arrivals-table__menu-icon, .arrivals-table__favorite-icon {
+  float: right;
+  transform: scale(1.2) translateY(1px);
+  padding-right: 4px;
+  width: 15px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.arrivals-table__station-name {
+  text-transform: none;
+  font-size: 1.67em;
+  background-color: $color-dark-2;
+  color: $color-light-1;
+}
+
+.arrivals-table__header {
+  text-align: center;
+  border: none;
+  margin: none;
+  text-transform: uppercase;
+  font-size: .6em;
+}
+
+.arrivals-table__header > tr > th {
+  padding: 8px;
+}
+
+.arrivals-table__row {
+  text-align: center;
+  text-transform: lowercase;
+  text-transform: capitalize;
+}
+
+.arrivals-table__img {
+  width: 35px;
+  padding-top: 5px;
+  padding-bottom: 2px;
+}
+
+.arrivals-table .arrivals-table__row:nth-child(2n-1) {
+  background-color: darken($color-light-1, 5%);
+}
+
+.arrivals-table__btn {
+  text-transform: uppercase;
+  font-size: .6em;
+  font-weight: bold;
+  background-color: none;
+  outline: none;
+  border: solid 2px $color-dark-2;
+  margin: 2px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 300ms ease, color 300ms ease;
+}
+.arrivals-table__btn:hover {
+  background-color: darken($color-light-1, 15%);
+}
+.arrivals-table__btn--active {
+  cursor: default;
+  background-color: $color-dark-2;
+  color: $color-light-1;
+}
+.arrivals-table__btn--active:hover {
+  background-color: $color-dark-2;
+}

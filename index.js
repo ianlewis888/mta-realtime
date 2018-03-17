@@ -3,14 +3,21 @@ const protobuf = require("protobufjs"),
   fs = require('fs'),
   firebase = require('firebase'),
   express = require ('express'),
-  mtaCreds = require('./credentials/mta.json'),
   fetchFeedFromURL = require('./fetchFeed'),
-  firebaseConfig = require('./credentials/firebase_config.json'),
   feedUrls = require('./station_mapping/feed_urls.json');
 
 const firebaseCreds = {
   "username": process.env.FIREBASE_LOGIN_EMAIL,
   "password": process.env.FIREBASE_LOGIN_PASSWORD
+};
+
+const firebaseConfig = {
+  "apiKey": process.env.FIREBASE_CONFIG_API_KEY,
+  "authDomain": process.env.FIREBASE_CONFIG_AUTH_DOMAIN,
+  "databaseURL": process.env.FIREBASE_CONFIG_DATABASE_URL,
+  "projectId": process.env.FIREBASE_CONFIG_PROJECT_ID,
+  "storageBucket": process.env.FIREBASE_CONFIG_STORAGE_BUCKET,
+  "messagingSenderId": process.env.FIREBASE_CONFIG_MESSAGING_SENDER_ID
 };
 
 firebase.initializeApp(firebaseConfig);
@@ -19,7 +26,7 @@ const app = express(),
   port = process.env.PORT || 5000,
   db = firebase.database();
 
-
+app.use(express.static(`${__dirname}/client/build`));
 
 // Fetch feed data from each endpoint and consolidate into single object
 async function processFeedData(FeedMessage) {
@@ -91,6 +98,14 @@ app.get("/api/arrivals", (req, res) => {
       });
 });
 
+// Serve react app from "client" folder
+app.get("/", (req, res) => {
+  res.sendFile(`${__dirname}/client/build/index.html`);
+});
+
+app.get("*", (req, res) => {
+  res.sendFile(`${__dirname}/client/build/index.html`);
+});
+
 // Initiate Server
 app.listen(port, () => { console.log(`Listening on port ${port}`); });
-console.log(process.env.NODE_ENV);
