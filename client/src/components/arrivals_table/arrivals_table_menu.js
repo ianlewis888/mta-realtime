@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { Redirect } from 'react-router';
 import { connect } from 'react-redux';
-import icons from '../../data/icons.js';
 import { setArrivalFilters } from '../../actions/actions.js';
 
 class ArrivalsTableMenu extends Component {

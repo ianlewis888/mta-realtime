@@ -5,7 +5,6 @@ import ArrivalsTableRows from './arrivals_table_rows';
 import ArrivalsTableFooter from './arrivals_table_footer';
 import ArrivalsTableMenu from './arrivals_table_menu';
 import { toggleMenuState } from '../../actions/actions.js';
-import icons from '../../data/icons';
 
 class ArrivalsTable extends Component {
 
@@ -27,7 +26,7 @@ class ArrivalsTable extends Component {
                     this.props.dispatch(toggleMenuState());
                   }}>
                 </span>
-                <span className="fa fa-star arrivals-table__favorite-icon"></span>
+                {/*<span className="fa fa-star arrivals-table__favorite-icon"></span>*/}
               </th>
             </tr>
             <tr><ArrivalsTableMenu/></tr>

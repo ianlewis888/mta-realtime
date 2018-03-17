@@ -6,7 +6,7 @@ export default class Hero extends Component {
     return (
       <div className="hero">
         <h1 className="hero__heading">
-           <object className="hero__logo" data={mtaLogo}></object> 
+           <object className="hero__logo" aria-label="MTA Logo" data={mtaLogo}></object> 
           &nbsp;Subway Arrival Times</h1>
       </div>
     );

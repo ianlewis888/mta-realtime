@@ -5,8 +5,6 @@ import ArrivalsTable from './arrivals_table';
 import {
   setCurrentStation,
   removeCurrentStation,
-  setTimestampInterval,
-  updateTimestamp,
   setDefaultArrivalFilters,
   resetMenuState
 } from '../../actions/actions.js';

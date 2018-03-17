@@ -5,8 +5,8 @@ import createHistory from "history/createBrowserHistory";
 import Hero from './hero';
 import StationInput from './station_search/station_input';
 import ArrivalsContainer from './arrivals_table/arrivals_container';
-import { intitializeFirebase, updateTimestamp, setTimestampInterval } from '../actions/actions.js'
-import * as mtaLogo from '../images/mta_logo.svg';
+import FullPageSpinner from './loading_spinners/full_page_spinner';
+import { intitializeFirebase, updateTimestamp, setTimestampInterval } from '../actions/actions.js';
 
 const history = createHistory();
 
@@ -20,6 +20,7 @@ class Main extends Component {
     return (
       <div>
         <Hero />
+        <FullPageSpinner display={false}/>
         <Router history={history}>
           <Switch>
             <Route path="/stations/:complexId" component={ArrivalsContainer}/>

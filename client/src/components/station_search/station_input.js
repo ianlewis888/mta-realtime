@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Results from './station_results';
-import { removeCurrentStation } from '../../actions/actions.js'
 
 class StationInput extends Component {
 

@@ -6,7 +6,7 @@ import './styles/app.css';
 
 class App extends Component {
   render() {
-    console.log("process env:",process.env);
+
     return (
       <div className="App">
         <Provider store={store}>

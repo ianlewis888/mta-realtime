@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React from 'react';
 import icons from '../../data/icons';
 
 const ArrivalsTableRows = (props) => {
@@ -13,7 +12,7 @@ const ArrivalsTableRows = (props) => {
       if (a.arrivalTime > -1) { return true; }
       else { return false; }
     });
-    return adjusted.map(a => {
+    return filtered.map(a => {
       return { ...a, arrivalTime: `${a.arrivalTime} min` };
     });
   }
