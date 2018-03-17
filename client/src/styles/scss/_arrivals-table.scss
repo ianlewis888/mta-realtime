@@ -87,3 +87,8 @@
 .arrivals-table__btn--active:hover {
   background-color: $color-dark-2;
 }
+
+.arrivals-table__no-data {
+  margin: 10px;
+  display: inline-block;
+}

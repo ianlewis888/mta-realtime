@@ -43,11 +43,37 @@ const ArrivalsTableRows = (props) => {
     </tr>
   ));
 
-  const defaultRow = (<tr className="arrivals-table__row" key="0"><td colSpan="3">No Realtime Data Available</td></tr>);
+  const loadingRow = (
+    <tr className="arrivals-table__row" key="0">
+      <td colSpan="3">
+        <div className="spinner arrivals-spinner">
+          <div className="bounce1"></div>
+          <div className="bounce2"></div>
+          <div className="bounce3"></div>
+        </div>
+      </td>
+    </tr>
+  );
 
-  if (rows.length > 1){
+  const defaultRow = (
+    <tr className="arrivals-table__row" key="0">
+      <td colSpan="3">
+        <span className="arrivals-table__no-data">
+          No Realtime Data Available
+        </span>
+      </td>
+    </tr>
+  );
+
+  if (rows.length > 1) {
     return rows;
-  } else {
+  }
+
+  else if (props.arrivalsLoadState) {
+    return loadingRow;
+  }
+
+  else {
     return defaultRow;
   }
 }

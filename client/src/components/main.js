@@ -10,7 +10,7 @@ import {
   intitializeFirebase,
   updateTimestamp,
   setTimestampInterval,
-  updateDB
+  setInitialArrivals
 } from '../actions/actions.js';
 
 const history = createHistory();
@@ -18,7 +18,7 @@ const history = createHistory();
 class Main extends Component {
   componentWillMount() {
     this.props.dispatch(intitializeFirebase());
-    this.props.dispatch(updateDB());
+    this.props.dispatch(setInitialArrivals());
     this.props.dispatch(updateTimestamp());
     this.props.dispatch(setTimestampInterval());
   }
@@ -26,7 +26,7 @@ class Main extends Component {
     return (
       <div>
         <Hero />
-        <FullPageSpinner display={false}/>
+        <FullPageSpinner display={this.props.initialLoadState}/>
         <Router history={history}>
           <Switch>
             <Route path="/stations/:complexId" component={ArrivalsContainer}/>
@@ -38,6 +38,8 @@ class Main extends Component {
   }
 }
 
-export default connect(() => {
-  return {};
+export default connect((store) => {
+  return {
+    initialLoadState: store.initialLoadState
+  };
 })(Main);

@@ -24,7 +24,7 @@ protobuf.load(__dirname + "/proto_files/nyct-subway.proto", (err, root) => {
  */
 
 app.get("/api/arrivals", (req, res) => {
-  res.append("Access-Control-Allow-Origin", "*");
+  res.append("Access-Control-Allow-Origin", "http://localhost:3000");
   res.append("Cache-Control", "max-age=0, no-cache, must-revalidate, proxy-revalidate");
   writeArrivalsToDB(FeedMessage, res)
     .catch(err => {

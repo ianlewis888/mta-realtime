@@ -3,11 +3,14 @@ import * as axios from 'axios';
 import config from '../data/firebase_config';
 import * as defaultArrivalFilters from '../data/default_arrival_filters.json';
 
+const apiUrl = (process.env.NODE_ENV === "production")
+  ? process.env.HEROKU_URL : "http://localhost:5000/api/arrivals";
+
 /*
  * Action Types
  */
 
-export const SET_LOAD_STATE = "SET_LOAD_STATE";
+export const SET_ARRIVALS_LOAD_STATE = "SET_ARRIVALS_LOAD_STATE";
 export const INITIALIZE_FIREBASE = "INITIALIZE_FIREBASE";
 export const SET_CURRENT_STATION = "SET_CURRENT_STATION";
 export const RECEIVE_ARRIVAL_DATA = "RECEIVE_ARRIVAL_DATA";
@@ -17,39 +20,39 @@ export const TOGGLE_MENU_STATE = "TOGGLE_MENU_STATE";
 export const RESET_MENU_STATE = "RESET_MENU_STATE";
 export const SET_ARRIVAL_FILTERS = "SET_ARRIVAL_FILTERS";
 export const SET_DEFAULT_ARRIVAL_FILTERS = "SET_DEFAULT_ARRIVAL_FILTERS";
+export const SET_INITIAL_ARRIVALS = "SET_INITIAL_ARRIVALS";
 export const UPDATE_DB = "UPDATE_DB";
+export const SET_UPDATE_INTERVAL = "SET_UPDATE_INTERVAL";
 
 /*
  * Action Creators
  */
 
-export const setCurrentLoadState = (loadState) => {
+export const setArrivalsLoadState = (loadState) => {
   return {
-    type: SET_LOAD_STATE,
+    type: SET_ARRIVALS_LOAD_STATE,
     payload: loadState
   };
 }
 
 export const setCurrentStation = (complexId) => {
   return dispatch => {
-    dispatch(setCurrentLoadState(true));
+    dispatch(setArrivalsLoadState(true));
     dispatch({ type: SET_CURRENT_STATION, payload: complexId })
     const ref = firebase.database().ref(`arrivals/${complexId}`);
     ref.on("value", snapshot => {
       dispatch({ type: RECEIVE_ARRIVAL_DATA, payload: snapshot.val() });
-      dispatch(setCurrentLoadState(false));
+      dispatch(setArrivalsLoadState(false));
     });
   }
 }
 
 export const removeCurrentStation = (complexId) => {
   return dispatch => {
-    dispatch(setCurrentLoadState(true));
     dispatch({ type: SET_CURRENT_STATION, payload: null })
     const ref = firebase.database().ref(`arrivals/${complexId}`);
     ref.off();
     dispatch({ type: RECEIVE_ARRIVAL_DATA, payload: { arrivals: [] } });
-    dispatch(setCurrentLoadState(false));
   }
 }
 
@@ -99,11 +102,20 @@ export const setDefaultArrivalFilters = () => {
   };
 }
 
-const backEndUrl = "http://localhost:5000/api/arrivals";
+export const setInitialArrivals = () => {
+  return dispatch => {
+    axios.get(apiUrl).then(res => {
+      dispatch({
+        type: SET_INITIAL_ARRIVALS,
+        payload: res.data.updateStatus
+      });
+    });
+  }
+}
 
 export const updateDB = () => {
   return dispatch => {
-    axios.get(backEndUrl).then(res => {
+    axios.get(apiUrl).then(res => {
       dispatch({
         type: UPDATE_DB,
         payload: res.data.updateStatus
@@ -113,11 +125,9 @@ export const updateDB = () => {
 }
 
 export const intitializeFirebase = () => {
-  return dispatch => {
-    firebase.initializeApp(config);
-    return {
-      type: INITIALIZE_FIREBASE,
-      payload: true
-    };
-  }
+  firebase.initializeApp(config);
+  return {
+    type: INITIALIZE_FIREBASE,
+    payload: true
+  };
 }

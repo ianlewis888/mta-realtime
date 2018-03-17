@@ -10,16 +10,18 @@ class ArrivalsTable extends Component {
 
   render() {
     const menuIcon = this.props.menuState ? "fa-close" : "fa-bars";
+    const opacity = this.props.initialLoadState ? 0 : 1;
+    const stationName = this.props.stationList[this.props.currentStation].stationName;
     return (
       <div className="arrivals-table__container">
-        <table className="arrivals-table">
+        <table className="arrivals-table" style={{ opacity: opacity }}>
           <thead className="arrivals-table__header">
             <tr>
               <th colSpan="3" className="arrivals-table__station-name">
                 <Link to="/">
                   <span className="fa fa-chevron-left arrivals-table__exit"></span>
                 </Link>
-                {this.props.stationList[this.props.currentStation].stationName}
+                {stationName}
                 <span
                   className={"fa "+menuIcon+" arrivals-table__menu-icon"}
                   onClick={() => {
@@ -41,6 +43,7 @@ class ArrivalsTable extends Component {
               arrivals={this.props.arrivalData.arrivals}
               timestamp={this.props.timestamp}
               options={this.props.arrivalFilters}
+              arrivalsLoadState={this.props.arrivalsLoadState}
             />
             <ArrivalsTableFooter/>
           </tbody>
@@ -57,6 +60,8 @@ export default connect((state) => {
     currentStation: state.currentStation,
     timestamp: state.timestamp,
     arrivalFilters: state.arrivalFilters,
-    menuState: state.menuState
+    menuState: state.menuState,
+    arrivalsLoadState: state.arrivalsLoadState,
+    initialLoadState: state.initialLoadState
   };
 })(ArrivalsTable);
