@@ -1,6 +1,6 @@
-var stationData = require('./station_mapping/station_data.json');
-var tripData = require('./station_mapping/trip_data.json');
-var tripDefaults = require('./station_mapping/trip_defaults.json');
+var stationData = require('../data/station_data.json');
+var tripData = require('../data/trip_data.json');
+var tripDefaults = require('../data/trip_defaults.json');
 var axios = require("axios");
 
 function fetchFeed(URL, FeedMessage, tripUpdates) {
