@@ -35,7 +35,7 @@ function fetchFeed(URL, FeedMessage, tripUpdates) {
 
             // Filter Out Past Arrival Times
             var arrivalTime = Math.round((s.arrival.time - timestamp) / 60);
-            if (arrivalTime < -1) { console.log("removed negative number ("+arrivalTime+")"); return; }
+            if (arrivalTime < -1) { /*console.log("removed negative number ("+arrivalTime+")");*/ return; }
             else { arrivalTime = s.arrival.time; }
 
             var stopId = s.stopId.slice(0, -1);

@@ -5,13 +5,15 @@ import createHistory from "history/createBrowserHistory";
 import Hero from './hero';
 import StationInput from './station_search/station_input';
 import ArrivalsContainer from './arrivals_table/arrivals_container';
-import FullPageSpinner from './loading_spinners/full_page_spinner';
+import FullPageSpinner from './loading_spinner';
+import IdleMessage from './inactivity/idle_message';
 import googleTagManager from '../functions/google-tag-manager';
 import {
   intitializeFirebase,
   updateTimestamp,
   setTimestampInterval,
-  setInitialArrivals
+  setInitialArrivals,
+  escapeInitialArrivals
 } from '../actions/actions.js';
 
 const history = createHistory();
@@ -19,11 +21,18 @@ const history = createHistory();
 class Main extends Component {
 
   componentWillMount() {
+    const location = window.location.pathname.split("/");
+    const inactive = (location[location.length - 1] === "inactivity");
     this.props.dispatch(intitializeFirebase());
-    this.props.dispatch(setInitialArrivals());
     this.props.dispatch(updateTimestamp());
     this.props.dispatch(setTimestampInterval());
     googleTagManager();
+    if (!inactive) {
+      this.props.dispatch(setInitialArrivals());
+    }
+    else {
+      this.props.dispatch(escapeInitialArrivals());
+    }
   }
 
   render() {
@@ -34,6 +43,7 @@ class Main extends Component {
         <Router history={history}>
           <Switch>
             <Route path="/stations/:complexId" component={ArrivalsContainer}/>
+            <Route path="/inactivity" component={IdleMessage}/>
             <Route path="/" component={StationInput}/>
           </Switch>
         </Router>

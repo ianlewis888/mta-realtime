@@ -27,6 +27,10 @@ app.get("/api/arrivals", (req, res) => {
   res.append("Access-Control-Allow-Origin", "http://localhost:3000");
   res.append("Cache-Control", "max-age=0, no-cache, must-revalidate, proxy-revalidate");
   writeArrivalsToDB(FeedMessage, res)
+    .then(() => {
+      let timestamp = new Date(Date.now());
+      console.log(`Updated DB: ${timestamp.toLocaleDateString()} ${timestamp.toLocaleTimeString()}`)
+    })
     .catch(err => {
       res.json({ updateStatus: "error", error: err });
     });

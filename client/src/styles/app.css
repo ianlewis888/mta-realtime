@@ -287,4 +287,10 @@ td {
 .arrivals-table__menu-btn:hover {
   background-color: #433d35; }
 
+.inactivity__container {
+  font-size: 1.2em; }
+
+.inactivity__container > a {
+  color: #f2f2f2; }
+
 /*# sourceMappingURL=app.css.map */

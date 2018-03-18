@@ -13,7 +13,11 @@ import {
   SET_ARRIVAL_FILTERS,
   SET_DEFAULT_ARRIVAL_FILTERS,
   SET_INITIAL_ARRIVALS,
-  SET_UPDATE_INTERVAL
+  SET_UPDATE_INTERVAL,
+  CLEAR_UPDATE_INTERVAL,
+  SET_INACTIVITY_INTERVAL,
+  CLEAR_INACTIVITY_INTERVAL,
+  UPDATE_IDLE_TIME
 } from '../actions/actions.js'
 
 const initialState = {
@@ -27,7 +31,9 @@ const initialState = {
   timestampInterval: false,
   updateInterval: false,
   arrivalFilters: defaultArrivalFilters,
-  menuState: false
+  menuState: false,
+  inactivityInterval: false,
+  idleTime: 0
 };
 
 function rootReducer(state = initialState, action) {
@@ -73,7 +79,26 @@ function rootReducer(state = initialState, action) {
       return { ...state, initialLoadState: loadState };
 
     case SET_UPDATE_INTERVAL:
+      if (state.updateInterval) { clearInterval(state.updateInterval); }
       return { ...state, updateInterval: action.payload };
+
+    case CLEAR_UPDATE_INTERVAL:
+      if (state.updateInterval) { clearInterval(state.updateInterval); }
+      return { ...state, updateInterval: false };
+
+    case SET_INACTIVITY_INTERVAL:
+      if (state.inactivityInterval) { clearInterval(state.inactivityInterval); }
+      return { ...state, inactivityInterval: action.payload };
+
+    case CLEAR_INACTIVITY_INTERVAL:
+      if (state.inactivityInterval) { clearInterval(state.inactivityInterval); }
+      return { ...state, inactivityInterval: false };
+
+    case UPDATE_IDLE_TIME:
+      let newValue;
+      if (action.payload === "increment") { newValue = state.idleTime + 1; }
+      if (action.payload === 0) { newValue = 0; }
+      return { ...state, idleTime: newValue };
 
     default:
       return state;

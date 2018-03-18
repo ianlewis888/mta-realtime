@@ -4,9 +4,14 @@ import { Link } from 'react-router-dom';
 import ArrivalsTableRows from './arrivals_table_rows';
 import ArrivalsTableFooter from './arrivals_table_footer';
 import ArrivalsTableMenu from './arrivals_table_menu';
-import { toggleMenuState } from '../../actions/actions.js';
+import IdleTimer from '../inactivity/idle_timer';
+import { toggleMenuState, updateIdleTime } from '../../actions/actions.js';
 
 class ArrivalsTable extends Component {
+
+  componentWillMount() {
+    this.props.dispatch(updateIdleTime(0));
+  }
 
   render() {
     const menuIcon = this.props.menuState ? "fa-close" : "fa-bars";
@@ -14,6 +19,7 @@ class ArrivalsTable extends Component {
     const stationName = this.props.stationList[this.props.currentStation].stationName;
     return (
       <div className="arrivals-table__container">
+        <IdleTimer/>
         <table className="arrivals-table" style={{ opacity: opacity }}>
           <thead className="arrivals-table__header">
             <tr>

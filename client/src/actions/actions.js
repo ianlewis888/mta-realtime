@@ -23,6 +23,10 @@ export const SET_DEFAULT_ARRIVAL_FILTERS = "SET_DEFAULT_ARRIVAL_FILTERS";
 export const SET_INITIAL_ARRIVALS = "SET_INITIAL_ARRIVALS";
 export const UPDATE_DB = "UPDATE_DB";
 export const SET_UPDATE_INTERVAL = "SET_UPDATE_INTERVAL";
+export const CLEAR_UPDATE_INTERVAL = "CLEAR_UPDATE_INTERVAL";
+export const SET_INACTIVITY_INTERVAL = "SET_INACTIVITY_INTERVAL";
+export const CLEAR_INACTIVITY_INTERVAL = "CLEAR_INACTIVITY_INTERVAL";
+export const UPDATE_IDLE_TIME = "UPDATE_IDLE_TIME";
 
 /*
  * Action Creators
@@ -117,6 +121,17 @@ export const setUpdateInterval = () => {
   };
 }
 
+export const clearUpdateInterval = () => {
+  return {
+    type: CLEAR_UPDATE_INTERVAL,
+    payload: ""
+  }
+}
+
+export const escapeInitialArrivals = () => {
+  return { type: SET_INITIAL_ARRIVALS, payload: "up-to-date" };
+}
+
 export const setInitialArrivals = () => {
   return dispatch => {
     const timestamp = Date.now();
@@ -175,4 +190,30 @@ export const intitializeFirebase = () => {
     type: INITIALIZE_FIREBASE,
     payload: true
   };
+}
+
+export const updateIdleTime = (update) => {
+  return {
+    type: UPDATE_IDLE_TIME,
+    payload: update
+  }
+}
+
+export const setInactivityInterval = () => {
+  return dispatch => {
+    const inactivityInterval = setInterval(() => {
+      dispatch(updateIdleTime('increment'));
+    }, 60000);
+    dispatch({
+      type: SET_INACTIVITY_INTERVAL,
+      payload: inactivityInterval
+    });
+  }
+}
+
+export const clearInactivityInterval = () => {
+  return {
+    type: CLEAR_INACTIVITY_INTERVAL,
+    payload: ""
+  }
 }

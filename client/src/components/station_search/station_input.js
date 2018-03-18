@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Results from './station_results';
+import IdleTimer from '../inactivity/idle_timer';
+import { updateIdleTime } from '../../actions/actions';
 
 class StationInput extends Component {
 
@@ -33,9 +35,15 @@ class StationInput extends Component {
     }
     this.setState({...this.state, results: results});
   }
+
+  componentWillMount() {
+    this.props.dispatch(updateIdleTime(0));
+  }
+
   render() {
     return (
       <div>
+        <IdleTimer/>
         <input
           className="station-search__input"
           placeholder="Search for a station"
