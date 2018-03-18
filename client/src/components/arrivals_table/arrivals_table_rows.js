@@ -19,7 +19,7 @@ const ArrivalsTableRows = (props) => {
 
   function applyFilters(arrivals, options) {
     const directions = [null, "N", "S"];
-    const timed = setArrivalTimes(props.arrivals);
+    const timed = setArrivalTimes(arrivals);
     const filteredByDirection = options.direction === 0 ? timed : timed.filter(a => {
       return directions[options.direction] === a.direction;
     });
@@ -30,7 +30,8 @@ const ArrivalsTableRows = (props) => {
     return limited;
   }
 
-  const arrivals = applyFilters(props.arrivals, props.options);
+  const arrivals = (props.arrivals !== undefined && props.arrivals.length > 0)
+    ? applyFilters(props.arrivals, props.options) : [];
 
   const rows = arrivals.map(r => (
     <tr className="arrivals-table__row" key={String(r.arrivalTimestamp) + arrivals.indexOf(r)}>

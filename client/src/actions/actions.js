@@ -41,7 +41,9 @@ export const setCurrentStation = (complexId) => {
     dispatch({ type: SET_CURRENT_STATION, payload: complexId })
     const ref = firebase.database().ref(`arrivals/${complexId}`);
     ref.on("value", snapshot => {
-      dispatch({ type: RECEIVE_ARRIVAL_DATA, payload: snapshot.val() });
+      const data = snapshot.val();
+      const payload = (data !== null) ? data : [];
+      dispatch({ type: RECEIVE_ARRIVAL_DATA, payload: payload });
       dispatch(setArrivalsLoadState(false));
     });
   }
@@ -89,10 +91,10 @@ export const resetMenuState = () => {
   }
 }
 
-export const setArrivalFilters = (af) => {
+export const setArrivalFilters = (arrivalFilters) => {
     return {
       type: SET_ARRIVAL_FILTERS,
-      payload: af
+      payload: arrivalFilters
     };
 }
 
@@ -103,13 +105,28 @@ export const setDefaultArrivalFilters = () => {
   };
 }
 
+export const setUpdateInterval = () => {
+  return dispatch => {
+    setInterval(() => {
+      dispatch(updateDB());
+    }, 30000);
+    dispatch({
+      type: SET_UPDATE_INTERVAL,
+      payload: true
+    });
+  };
+}
+
 export const setInitialArrivals = () => {
   return dispatch => {
     axios.get(apiUrl).then(res => {
-      dispatch({
-        type: SET_INITIAL_ARRIVALS,
-        payload: res.data.updateStatus
-      });
+      if (res.data.updateStatus === "success") {
+        dispatch({
+          type: SET_INITIAL_ARRIVALS,
+          payload: res.data.updateStatus
+        });
+        dispatch(setUpdateInterval());
+      }
     });
   }
 }
@@ -124,18 +141,6 @@ export const updateDB = () => {
       });
     });
   }
-}
-
-export const setUpdateInterval = () => {
-  return dispatch => {
-    setInterval(() => {
-      dispatch(updateDB());
-    }, 30000);
-    dispatch({
-      type: SET_UPDATE_INTERVAL,
-      payload: true
-    });
-  };
 }
 
 export const intitializeFirebase = () => {
