@@ -25,7 +25,8 @@ const initialState = {
   initialLoadState: true,
   currentStation: null,
   timestamp: Date.now() / 1000,
-  timestampInterval: null,
+  timestampInterval: false,
+  updateInterval: false,
   arrivalFilters: defaultArrivalFilters,
   menuState: false
 };
@@ -71,6 +72,9 @@ function rootReducer(state = initialState, action) {
     case SET_INITIAL_ARRIVALS:
       const ls = (action.payload === "success") ? false : "error";
       return { ...state, initialLoadState: ls };
+
+    case SET_UPDATE_INTERVAL:
+      return { ...state, updaetInterval: action.payload };
 
     default:
       return state;

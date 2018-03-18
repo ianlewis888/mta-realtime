@@ -10,7 +10,8 @@ import {
   intitializeFirebase,
   updateTimestamp,
   setTimestampInterval,
-  setInitialArrivals
+  setInitialArrivals,
+  setUpdateInterval
 } from '../actions/actions.js';
 
 const history = createHistory();
@@ -19,6 +20,7 @@ class Main extends Component {
   componentWillMount() {
     this.props.dispatch(intitializeFirebase());
     this.props.dispatch(setInitialArrivals());
+    this.props.dispatch(setUpdateInterval());
     this.props.dispatch(updateTimestamp());
     this.props.dispatch(setTimestampInterval());
   }

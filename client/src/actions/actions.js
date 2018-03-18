@@ -65,12 +65,13 @@ export const updateTimestamp = () => {
 
 export const setTimestampInterval = () => {
   return dispatch => {
-    return {
+    setInterval(() => {
+      dispatch(updateTimestamp());
+    }, 5000);
+    dispatch({
       type: SET_TIMESTAMP_INTERVAL,
-      payload: setInterval(() => {
-        dispatch(updateTimestamp());
-      }, 5000)
-    };
+      payload: true
+    });
   };
 }
 
@@ -116,12 +117,25 @@ export const setInitialArrivals = () => {
 export const updateDB = () => {
   return dispatch => {
     axios.get(apiUrl).then(res => {
+      if (res.data.updateStatus.error) { console.error(res.data.updateStatus.error) }
       dispatch({
         type: UPDATE_DB,
         payload: res.data.updateStatus
       });
     });
   }
+}
+
+export const setUpdateInterval = () => {
+  return dispatch => {
+    setInterval(() => {
+      dispatch(updateDB());
+    }, 30000);
+    dispatch({
+      type: SET_UPDATE_INTERVAL,
+      payload: true
+    });
+  };
 }
 
 export const intitializeFirebase = () => {
