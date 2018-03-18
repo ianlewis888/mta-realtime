@@ -246,7 +246,7 @@ td {
   font-size: 1.5em; }
 
 .arrivals-table__menu--expanded {
-  height: 165px;
+  height: 210px;
   pointer-events: all; }
 
 .arrivals-table__menu-component {
@@ -272,5 +272,19 @@ td {
 .arrivals-table__menu-select-icon {
   transform: translateX(-20px);
   pointer-events: none; }
+
+.arrivals-table__menu-btn {
+  font-weight: bold;
+  background-color: inherit;
+  outline: none;
+  color: #f2f2f2;
+  border: solid 2px #f2f2f2;
+  padding: 5px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 300ms ease, color 300ms ease; }
+
+.arrivals-table__menu-btn:hover {
+  background-color: #433d35; }
 
 /*# sourceMappingURL=app.css.map */

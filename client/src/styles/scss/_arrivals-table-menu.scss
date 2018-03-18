@@ -15,7 +15,7 @@
 
 
 .arrivals-table__menu--expanded {
-  height: 165px;
+  height: 210px;
   pointer-events: all;
 }
 
@@ -45,4 +45,20 @@
 .arrivals-table__menu-select-icon {
   transform: translateX(-20px);
   pointer-events: none;
+}
+
+.arrivals-table__menu-btn {
+  font-weight: bold;
+  background-color: inherit;
+  outline: none;
+  color: $color-light-1;
+  border: solid 2px $color-light-1;
+  padding: 5px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 300ms ease, color 300ms ease;
+}
+
+.arrivals-table__menu-btn:hover {
+  background-color: lighten($color-dark-2, 15%);
 }

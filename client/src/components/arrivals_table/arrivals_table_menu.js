@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { setArrivalFilters } from '../../actions/actions.js';
+import { setArrivalFilters, setDefaultArrivalFilters } from '../../actions/actions.js';
 
 class ArrivalsTableMenu extends Component {
   constructor() {
@@ -40,7 +40,10 @@ class ArrivalsTableMenu extends Component {
         <div className={"arrivals-table__menu "+menuState}>
           <div className="arrivals-table__menu-component">
             <label>Filter by route:</label>
-            <select className="arrivals-table__menu-select" onChange={this.handleRouteFilterChange}>
+            <select
+              className="arrivals-table__menu-select"
+              onChange={this.handleRouteFilterChange}
+              value={this.props.arrivalFilters.route}>
               <option>All</option>
               {routeOptions}
             </select>
@@ -68,6 +71,13 @@ class ArrivalsTableMenu extends Component {
             </select>
             <span className="fa fa-chevron-down arrivals-table__menu-select-icon"></span>
           </div>
+          <div className="arrivals-table__menu-component">
+            <button
+              onClick={()=>{this.props.dispatch(setDefaultArrivalFilters())}}
+              className="arrivals-table__menu-btn">
+              Clear Filters
+            </button>
+          </div>
         </div>
       </td>
     );
@@ -75,9 +85,13 @@ class ArrivalsTableMenu extends Component {
 }
 
 export default connect((state) => {
+  const arrivalFilters = (state.arrivalFilters.route === null)
+    ? {...state.arrivalFilters, route: "All" }
+    : state.arrivalFilters;
+
   return {
     menuState: state.menuState,
     routeIds: state.arrivalData.routeIds || [],
-    arrivalFilters: state.arrivalFilters
+    arrivalFilters: arrivalFilters
   };
 })(ArrivalsTableMenu)
