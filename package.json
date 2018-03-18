@@ -4,7 +4,8 @@
   "description": "\"Real-time MTA Subway Arrivals App\"",
   "main": "index.js",
   "scripts": {
-    "start": "export NODE_ENV=production && node index.js",
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build",
     "dev": "export NODE_ENV=development && node index.js"
   },
   "author": "Ian J. Lewis",

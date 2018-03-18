@@ -4,7 +4,9 @@ import config from '../data/firebase_config';
 import * as defaultArrivalFilters from '../data/default_arrival_filters.json';
 
 const apiUrl = (process.env.NODE_ENV === "production")
-  ? process.env.HEROKU_URL : "http://localhost:5000/api/arrivals";
+  // ? "http://localhost:5000/api/arrivals"
+  ? process.env.HEROKU_URL
+  : "http://localhost:5000/api/arrivals";
 
 /*
  * Action Types

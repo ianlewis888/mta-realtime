@@ -1,12 +1,13 @@
 const protobuf = require("protobufjs"),
   axios = require("axios"),
-  express = require ('express'),
+  express = require('express'),
+  path = require('path'),
   writeArrivalsToDB = require('./functions/write_to_db');
   app = express(),
   port = process.env.PORT || 5000;
 
 
-app.use(express.static(`${__dirname}/client/build`));
+app.use(express.static(path.join(__dirname, 'client/build')));
 
 /*
  *  Load MTA protocol buffer feed message
@@ -36,12 +37,9 @@ app.get("/api/arrivals", (req, res) => {
     });
 });
 
-app.get("/", (req, res) => {
-  res.sendFile(`${__dirname}/client/build/index.html`);
-});
-
 app.get("*", (req, res) => {
-  res.sendFile(`${__dirname}/client/build/index.html`);
+  console.log("served app");
+  res.sendFile(path.join(__dirname,'client/build/index.html'));
 });
 
 app.listen(port, () => { console.log(`Listening on port ${port}`); });
