@@ -60,7 +60,7 @@ function sortData(data) {
  */
 
 function writeArrivalsToDB(FeedMessage, res) {
-  // res.append({"Access-Control-Allow-Origin": "*"});
+
   return firebase.auth()
     .signInWithEmailAndPassword(firebaseCreds.username, firebaseCreds.password)
     .then(() => {
@@ -68,6 +68,7 @@ function writeArrivalsToDB(FeedMessage, res) {
         .then(sortData)
         .then(data => {
           db.ref("arrivals").set(data);
+          db.ref("last-update").set(Date.now());
         })
         .then(() => {
           res.json({ updateStatus: "success" });

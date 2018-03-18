@@ -10,8 +10,7 @@ import {
   intitializeFirebase,
   updateTimestamp,
   setTimestampInterval,
-  setInitialArrivals,
-  setUpdateInterval
+  setInitialArrivals
 } from '../actions/actions.js';
 
 const history = createHistory();

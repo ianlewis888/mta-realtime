@@ -107,24 +107,38 @@ export const setDefaultArrivalFilters = () => {
 
 export const setUpdateInterval = () => {
   return dispatch => {
-    setInterval(() => {
+    const updateInterval = setInterval(() => {
       dispatch(updateDB());
     }, 30000);
     dispatch({
       type: SET_UPDATE_INTERVAL,
-      payload: true
+      payload: updateInterval
     });
   };
 }
 
 export const setInitialArrivals = () => {
   return dispatch => {
-    axios.get(apiUrl).then(res => {
-      if (res.data.updateStatus === "success") {
-        dispatch({
-          type: SET_INITIAL_ARRIVALS,
-          payload: res.data.updateStatus
+    const timestamp = Date.now();
+    const ref = firebase.database().ref('last-update');
+    ref.once('value').then(snapshot => {
+      return ((timestamp - 30000) >= Number(snapshot.val()));
+    }).then(update => {
+      if (update)
+      {
+        axios.get(apiUrl).then(res => {
+          if (res.data.updateStatus === "success") {
+            dispatch({
+              type: SET_INITIAL_ARRIVALS,
+              payload: res.data.updateStatus
+            });
+            dispatch(setUpdateInterval());
+          }
         });
+      }
+      else
+      {
+        dispatch({ type: SET_INITIAL_ARRIVALS, payload: "up-to-date" });
         dispatch(setUpdateInterval());
       }
     });
@@ -133,12 +147,24 @@ export const setInitialArrivals = () => {
 
 export const updateDB = () => {
   return dispatch => {
-    axios.get(apiUrl).then(res => {
-      if (res.data.updateStatus.error) { console.error(res.data.updateStatus.error) }
-      dispatch({
-        type: UPDATE_DB,
-        payload: res.data.updateStatus
-      });
+    const timestamp = Date.now();
+    const ref = firebase.database().ref('last-update');
+    ref.once('value').then(snapshot => {
+      return ((timestamp - 30000) >= Number(snapshot.val()));
+    }).then(update => {
+      if (update)
+      {
+        axios.get(apiUrl).then(res => {
+          if (res.data.updateStatus.error) {
+            console.error(res.data.updateStatus.error)
+          }
+          dispatch({ type: UPDATE_DB, payload: res.data.updateStatus });
+        });
+      }
+      else
+      {
+        dispatch({ type: UPDATE_DB, payload: "up-to-date" });
+      }
     });
   }
 }

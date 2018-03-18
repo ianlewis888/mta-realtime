@@ -1,13 +1,14 @@
 {
-  "name": "mta-backend",
+  "name": "mta-realtime",
   "version": "1.0.0",
-  "description": "\"node back-end for subway arrival app\"",
+  "description": "\"Real-time MTA Subway Arrivals App\"",
   "main": "index.js",
   "scripts": {
-    "start": "export NODE_ENV=development && node index.js"
+    "start": "export NODE_ENV=production && node index.js",
+    "dev": "export NODE_ENV=development && node index.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Ian J. Lewis",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.18.0",
     "bytebuffer": "^5.0.1",

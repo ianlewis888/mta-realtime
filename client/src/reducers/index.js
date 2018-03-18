@@ -13,7 +13,6 @@ import {
   SET_ARRIVAL_FILTERS,
   SET_DEFAULT_ARRIVAL_FILTERS,
   SET_INITIAL_ARRIVALS,
-  UPDATE_DB,
   SET_UPDATE_INTERVAL
 } from '../actions/actions.js'
 
@@ -70,11 +69,11 @@ function rootReducer(state = initialState, action) {
       return { ...state, arrivalFilters: action.payload };
 
     case SET_INITIAL_ARRIVALS:
-      const ls = (action.payload === "success") ? false : "error";
-      return { ...state, initialLoadState: ls };
+      const loadState = (action.payload === "success" || action.payload === "up-to-date") ? false : "error";
+      return { ...state, initialLoadState: loadState };
 
     case SET_UPDATE_INTERVAL:
-      return { ...state, updaetInterval: action.payload };
+      return { ...state, updateInterval: action.payload };
 
     default:
       return state;
