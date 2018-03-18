@@ -5,7 +5,7 @@ import * as defaultArrivalFilters from '../data/default_arrival_filters.json';
 
 const apiUrl = (process.env.NODE_ENV === "production")
   // ? "http://localhost:5000/api/arrivals"
-  ? process.env.HEROKU_URL
+  ? process.env.REACT_APP_HEROKU_URL + "/api/arrivals"
   : "http://localhost:5000/api/arrivals";
 
 /*
