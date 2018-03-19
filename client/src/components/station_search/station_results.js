@@ -10,7 +10,13 @@ const Results = (props) => {
     </Link>
 
   ))
-  return <ul className="station-search__results-container">{options}</ul>
+  return (
+    <div className="station-search__results-wrapper">
+      <ul className="station-search__results-container">
+        {options}
+      </ul>
+    </div>
+  );
 }
 
 export default Results;

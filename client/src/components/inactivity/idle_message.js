@@ -4,8 +4,7 @@ import { Link } from 'react-router-dom';
 import {
   setInitialArrivals,
   clearUpdateInterval,
-  clearInactivityInterval,
-  updateIdleTime
+  clearInactivityInterval
 } from '../../actions/actions';
 
 class IdleMessage extends Component {

@@ -11,6 +11,9 @@
   pointer-events: none;
   overflow: hidden;
   font-size: 1.5em;
+  @media(max-width: $small) {
+    font-size: 1.75em;
+  }
 }
 
 
@@ -36,6 +39,7 @@
   color: $color-light-1;
   appearance: none;
   padding-bottom: 2px;
+  border-radius: 0;
 }
 
 .arrivals-table__menu-select > option {

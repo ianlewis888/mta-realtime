@@ -43,3 +43,7 @@ Thumbs.db
 # Nodemon Config #
 ##################
 nodemon.json
+
+# Environment Variables #
+#########################
+.env

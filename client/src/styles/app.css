@@ -27,15 +27,26 @@ td {
 .hero {
   animation: hero-animation 1s;
   animation-timing-function: ease;
-  padding-top: 5%;
-  padding-bottom: 5%; }
+  padding-top: 8%;
+  padding-bottom: 8%; }
 
 .hero__heading {
   font-size: 50px; }
+  @media (max-width: 740px) {
+    .hero__heading {
+      font-size: 35px; } }
 
 .hero__logo {
   max-width: 100px;
   transform: translateY(35px); }
+  @media (max-width: 740px) {
+    .hero__logo {
+      max-width: none;
+      display: block;
+      transform: none;
+      margin-bottom: 20px;
+      width: 20%;
+      margin-left: 40%; } }
 
 .spinner-bg {
   position: absolute;
@@ -100,24 +111,36 @@ td {
   padding-bottom: 10px;
   border-bottom: solid 4px #f2f2f2;
   text-align: center;
+  margin-bottom: 5%;
+  border-radius: 0; }
+
+.station-search__results-wrapper {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: -5%;
   margin-bottom: 5%; }
 
 .station-search__results-container {
-  text-align: left;
-  margin-top: -5%;
   list-style: none;
-  display: block;
-  max-width: 30%;
-  margin-left: 35%;
-  margin-right: 35%;
-  margin-bottom: 5%;
-  box-shadow: 0px 0px 20px 0px #181613; }
+  display: inline-block;
+  box-shadow: 0px 10px 10px 0px #181613;
+  min-width: 350px; }
+  @media (max-width: 740px) {
+    .station-search__results-container {
+      width: 95%;
+      max-width: none; } }
+  @media (max-width: 400px) {
+    .station-search__results-container {
+      font-size: .85em; } }
 
 .station-search__results-container a {
   text-decoration: none;
   color: inherit; }
 
 .station-search__result {
+  display: block;
+  text-align: left;
   padding: 8px;
   font-weight: bold;
   font-size: 1.1em;
@@ -136,7 +159,11 @@ td {
   border-radius: 3px;
   color: #f2f2f2;
   padding: 3px;
-  float: right; }
+  float: right;
+  margin-left: 50px; }
+  @media (max-width: 740px) {
+    .station-search__result-routes {
+      margin-left: 0px; } }
 
 .station-search__results-container > a:first-child > .station-search__result {
   border-top-left-radius: 3px;
@@ -154,6 +181,10 @@ td {
   border-radius: 3px;
   margin: 10px;
   margin-bottom: 5%; }
+  @media (max-width: 740px) {
+    .arrivals-table__container {
+      width: 100%;
+      margin: 0px; } }
 
 .arrivals-table {
   position: relative;
@@ -162,6 +193,11 @@ td {
   box-shadow: 0px 0px 20px 0px #181613;
   color: #181613;
   background-color: #f2f2f2; }
+  @media (max-width: 740px) {
+    .arrivals-table {
+      width: 100%;
+      margin: 0px;
+      font-size: .95em; } }
 
 .arrivals-table__exit {
   color: #f2f2f2;
@@ -181,6 +217,9 @@ td {
   font-size: 1.67em;
   background-color: #181613;
   color: #f2f2f2; }
+  @media (max-width: 740px) {
+    .arrivals-table__station-name {
+      font-size: 1.85em; } }
 
 .arrivals-table__header {
   text-align: center;
@@ -201,6 +240,11 @@ td {
   width: 35px;
   padding-top: 5px;
   padding-bottom: 2px; }
+  @media (max-width: 740px) {
+    .arrivals-table__img {
+      width: 32px;
+      padding-top: 8px;
+      padding-bottom: 5px; } }
 
 .arrivals-table .arrivals-table__row:nth-child(2n-1) {
   background-color: #e5e5e5; }
@@ -212,10 +256,15 @@ td {
   background-color: none;
   outline: none;
   border: solid 2px #181613;
-  margin: 2px;
+  margin: 4px;
+  margin-top: 8px;
+  margin-bottom: 8px;
   border-radius: 2px;
   cursor: pointer;
   transition: background-color 300ms ease, color 300ms ease; }
+  @media (max-width: 740px) {
+    .arrivals-table__btn {
+      font-size: .75em; } }
 
 .arrivals-table__btn:hover {
   background-color: #cccccc; }
@@ -244,6 +293,9 @@ td {
   pointer-events: none;
   overflow: hidden;
   font-size: 1.5em; }
+  @media (max-width: 740px) {
+    .arrivals-table__menu {
+      font-size: 1.75em; } }
 
 .arrivals-table__menu--expanded {
   height: 210px;
@@ -264,7 +316,8 @@ td {
   background: none;
   color: #f2f2f2;
   appearance: none;
-  padding-bottom: 2px; }
+  padding-bottom: 2px;
+  border-radius: 0; }
 
 .arrivals-table__menu-select > option {
   color: #181613; }
