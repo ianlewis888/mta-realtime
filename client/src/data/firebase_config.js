@@ -17,5 +17,5 @@ const productionConfig = {
 }
 
 const config = (process.env.NODE_ENV === "production") ? productionConfig : developmentConfig;
-
+console.log(config);
 export default config;
