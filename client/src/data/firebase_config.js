@@ -16,6 +16,6 @@ const productionConfig = {
   "messagingSenderId": process.env.FIREBASE_CONFIG_MESSAGING_SENDER_ID
 }
 
-const config = (process.env.NODE_ENV === "production") ? productionConfig : developmentConfig;
+const config = developmentConfig; /*(process.env.NODE_ENV === "production") ? productionConfig : developmentConfig;*/
 console.log(config);
 export default config;
