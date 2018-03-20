@@ -39,6 +39,11 @@ Thumbs.db
 # Login Credentials #
 #####################
 /credentials/*
+client/.env
+
+# Build #
+#########
+client/build/*
 
 # Nodemon Config #
 ##################
